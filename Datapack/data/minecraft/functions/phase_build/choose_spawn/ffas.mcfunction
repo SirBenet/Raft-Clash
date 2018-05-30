@@ -1,0 +1,1 @@
+execute as @a[team=play,gamemode=!spectator] run function phase_build/choose_spawn/player

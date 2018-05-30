@@ -1,0 +1,2 @@
+tag @s add AIRecord
+#summon stray ~ ~ ~ {Tags:["AIRecordGhost"],Team:"NoCollide",DeathLootTable:"minecraft:empty",ArmorItems:[{},{},{},{id:golden_hoe,Damage:4,Count:1,tag:{Unbreakable:1b}}],HandItems:[{id:golden_hoe,Damage:6,Count:1,tag:{Unbreakable:1b}},{id:golden_hoe,Damage:5,Count:1,tag:{Unbreakable:1b}}],Silent:1b,NoAI:1b,Invulnerable:1b}

@@ -1,0 +1,17 @@
+{
+	"container.crafting":"",
+	"book.pageIndicator":"",
+
+	"block.minecraft.birch_planks":"Yellow Planks",
+	"block.minecraft.jungle_planks":"Green Planks",
+	"block.minecraft.acacia_planks":"Red Planks",
+	"block.minecraft.dark_oak_planks":"Blue Planks",
+
+	"block.minecraft.jungle_fence_gate":"Cannon",
+	"block.minecraft.acacia_fence_gate":"Treasure Chest",
+	"block.minecraft.birch_fence_gate":"Helm",
+
+	"potion.potency.4":"V",
+
+	"You are not using the required resource pack! Click here to download it.":"%s"
+}

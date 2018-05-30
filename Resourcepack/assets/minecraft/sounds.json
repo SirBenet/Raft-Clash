@@ -1,0 +1,11 @@
+{  
+   "random.splash":{  
+      "sounds":[  
+         {  
+            "name":"random/splash",
+            "stream":false
+         }
+      ],
+      "category":"master"
+   }
+}

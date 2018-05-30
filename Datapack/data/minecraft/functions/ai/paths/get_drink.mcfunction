@@ -1,0 +1,1 @@
+setblock -2 17 2 redstone_block destroy

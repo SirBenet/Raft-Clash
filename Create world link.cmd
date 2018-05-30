@@ -1,0 +1,1 @@
+mklink /D "%appdata%\.minecraft\saves\Raft Clash" "D:\Project\Raft Clash\World"

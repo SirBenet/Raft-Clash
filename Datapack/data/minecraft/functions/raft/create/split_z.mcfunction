@@ -1,0 +1,16 @@
+execute positioned ~ ~ ~0 run function raft/create/descend
+execute positioned ~ ~ ~1 run function raft/create/descend
+execute positioned ~ ~ ~2 run function raft/create/descend
+execute positioned ~ ~ ~3 run function raft/create/descend
+execute positioned ~ ~ ~4 run function raft/create/descend
+execute positioned ~ ~ ~5 run function raft/create/descend
+execute positioned ~ ~ ~6 run function raft/create/descend
+execute positioned ~ ~ ~7 run function raft/create/descend
+execute positioned ~ ~ ~8 run function raft/create/descend
+execute positioned ~ ~ ~9 run function raft/create/descend
+execute positioned ~ ~ ~10 run function raft/create/descend
+execute positioned ~ ~ ~11 run function raft/create/descend
+execute positioned ~ ~ ~12 run function raft/create/descend
+execute positioned ~ ~ ~13 run function raft/create/descend
+execute positioned ~ ~ ~14 run function raft/create/descend
+execute positioned ~ ~ ~15 run function raft/create/descend

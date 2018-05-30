@@ -1,0 +1,2 @@
+# Captain coldblood for lobby (0-0-0-0-2)
+summon stray -6 14 -2 {Tags:["AIMain"],UUIDLeast:2l,UUIDMost:0l,CustomName:"{\"color\":\"dark_green\",\"text\":\"Captain Coldblood\"}",DeathLootTable:"minecraft:empty",ArmorItems:[{},{},{},{id:golden_hoe,Count:1,tag:{Unbreakable:1b,Damage:4}}],HandItems:[{id:golden_hoe,Count:1,tag:{Unbreakable:1b,Damage:6}},{id:golden_hoe,Count:1,tag:{Unbreakable:1b,Damage:5}}],Silent:1b,NoAI:1b,Invulnerable:1b}

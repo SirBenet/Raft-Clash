@@ -1,0 +1,1 @@
+replaceitem entity @s armor.head golden_hoe{Unbreakable:1b,Damage:1,HideFlags:63,display:{Name:"{\"text\":\"Eyepatch\",\"italic\":false,\"color\":\"white\"}"},Enchantments:[{id:"binding_curse",lvl:1}]}

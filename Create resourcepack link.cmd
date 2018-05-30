@@ -1,0 +1,1 @@
+mklink /D "%appdata%\.minecraft\resourcepacks\Raft Clash Resourcepack" "D:\Project\Raft Clash\Resourcepack"

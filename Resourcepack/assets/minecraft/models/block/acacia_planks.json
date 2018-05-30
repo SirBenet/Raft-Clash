@@ -1,0 +1,13 @@
+{
+    "parent": "block/cube_all",
+	"display": {
+		"head": {
+			"scale": [2.3, 2.3, 2.3],
+			"translation": [0, -14.5, 0],
+			"rotation": [0, 180, 0]
+		}
+	},
+    "textures": {
+        "all": "blocks/acacia_planks"
+    }
+}

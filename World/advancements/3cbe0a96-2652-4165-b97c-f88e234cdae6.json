@@ -1,0 +1,8 @@
+{
+  "minecraft:recipes/building_blocks/stone_bricks": {
+    "criteria": {
+      "has_stone": "2017-12-29 13:27:05 +0000"
+    },
+    "done": true
+  }
+}

@@ -1,0 +1,1 @@
+summon bat 0 10 0 {PersistenceRequired:1b,UUIDLeast:1l,UUIDMost:0l,NoAI:1b,Silent:1b,AbsorptionAmount:350000000000000000000000000000000000000.0f,Tags:["data"],CustomName:"\"PhaseLobby\""}
