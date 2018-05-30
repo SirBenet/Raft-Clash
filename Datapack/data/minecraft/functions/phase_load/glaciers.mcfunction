@@ -1,72 +1,72 @@
-execute if entity @s[scores={LOADTimer=5}] run setblock 3310 28 -304 air
-execute if entity @s[scores={LOADTimer=5}] run setblock 3310 28 -304 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/0",} replace
-execute if entity @s[scores={LOADTimer=5}] run setblock 3310 29 -304 redstone_block destroy
-execute if entity @s[scores={LOADTimer=10}] run setblock 3310 28 -289 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/1",posZ:1} replace
-execute if entity @s[scores={LOADTimer=10}] run setblock 3310 29 -289 redstone_block destroy
-execute if entity @s[scores={LOADTimer=15}] run setblock 3310 28 -273 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/2",posZ:1} replace
-execute if entity @s[scores={LOADTimer=15}] run setblock 3310 29 -273 redstone_block destroy
-execute if entity @s[scores={LOADTimer=20}] run setblock 3310 28 -257 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/3",posZ:1} replace
-execute if entity @s[scores={LOADTimer=20}] run setblock 3310 29 -257 redstone_block destroy
-execute if entity @s[scores={LOADTimer=25}] run setblock 3310 28 -241 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/4",posZ:1} replace
-execute if entity @s[scores={LOADTimer=25}] run setblock 3310 29 -241 redstone_block destroy
-execute if entity @s[scores={LOADTimer=30}] run setblock 3310 28 -225 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/5",posZ:1} replace
-execute if entity @s[scores={LOADTimer=30}] run setblock 3310 29 -225 redstone_block destroy
-execute if entity @s[scores={LOADTimer=35}] run setblock 3310 28 -209 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/6",posZ:1} replace
-execute if entity @s[scores={LOADTimer=35}] run setblock 3310 29 -209 redstone_block destroy
-execute if entity @s[scores={LOADTimer=40}] run setblock 3310 28 -193 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/7",posZ:1} replace
-execute if entity @s[scores={LOADTimer=40}] run setblock 3310 29 -193 redstone_block destroy
-execute if entity @s[scores={LOADTimer=45}] run setblock 3310 28 -177 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/8",posZ:1} replace
-execute if entity @s[scores={LOADTimer=45}] run setblock 3310 29 -177 redstone_block destroy
-execute if entity @s[scores={LOADTimer=50}] run setblock 3310 28 -161 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/9",posZ:1} replace
-execute if entity @s[scores={LOADTimer=50}] run setblock 3310 29 -161 redstone_block destroy
-execute if entity @s[scores={LOADTimer=55}] run setblock 3310 28 -145 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/10",posZ:1} replace
-execute if entity @s[scores={LOADTimer=55}] run setblock 3310 29 -145 redstone_block destroy
-execute if entity @s[scores={LOADTimer=60}] run setblock 3310 28 -129 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/11",posZ:1} replace
-execute if entity @s[scores={LOADTimer=60}] run setblock 3310 29 -129 redstone_block destroy
-execute if entity @s[scores={LOADTimer=65}] run setblock 3310 28 -113 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/12",posZ:1} replace
-execute if entity @s[scores={LOADTimer=65}] run setblock 3310 29 -113 redstone_block destroy
-execute if entity @s[scores={LOADTimer=70}] run setblock 3310 28 -97 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/13",posZ:1} replace
-execute if entity @s[scores={LOADTimer=70}] run setblock 3310 29 -97 redstone_block destroy
-execute if entity @s[scores={LOADTimer=75}] run setblock 3310 28 -81 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/14",posZ:1} replace
-execute if entity @s[scores={LOADTimer=75}] run setblock 3310 29 -81 redstone_block destroy
-execute if entity @s[scores={LOADTimer=80}] run setblock 3310 28 -65 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/15",posZ:1} replace
-execute if entity @s[scores={LOADTimer=80}] run setblock 3310 29 -65 redstone_block destroy
-execute if entity @s[scores={LOADTimer=85}] run setblock 3310 28 -49 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/16",posZ:1} replace
-execute if entity @s[scores={LOADTimer=85}] run setblock 3310 29 -49 redstone_block destroy
-execute if entity @s[scores={LOADTimer=90}] run setblock 3310 28 -33 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/17",posZ:1} replace
-execute if entity @s[scores={LOADTimer=90}] run setblock 3310 29 -33 redstone_block destroy
-execute if entity @s[scores={LOADTimer=95}] run setblock 3310 28 -17 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/18",posZ:1} replace
-execute if entity @s[scores={LOADTimer=95}] run setblock 3310 29 -17 redstone_block destroy
-execute if entity @s[scores={LOADTimer=100}] run setblock 3310 28 -1 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/19",posZ:1} replace
-execute if entity @s[scores={LOADTimer=100}] run setblock 3310 29 -1 redstone_block destroy
-execute if entity @s[scores={LOADTimer=105}] run setblock 3310 28 15 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/20",posZ:1} replace
-execute if entity @s[scores={LOADTimer=105}] run setblock 3310 29 15 redstone_block destroy
-execute if entity @s[scores={LOADTimer=110}] run setblock 3310 28 31 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/21",posZ:1} replace
-execute if entity @s[scores={LOADTimer=110}] run setblock 3310 29 31 redstone_block destroy
-execute if entity @s[scores={LOADTimer=115}] run setblock 3310 28 47 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/22",posZ:1} replace
-execute if entity @s[scores={LOADTimer=115}] run setblock 3310 29 47 redstone_block destroy
-execute if entity @s[scores={LOADTimer=120}] run setblock 3310 28 63 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/23",posZ:1} replace
-execute if entity @s[scores={LOADTimer=120}] run setblock 3310 29 63 redstone_block destroy
-execute if entity @s[scores={LOADTimer=125}] run setblock 3310 28 79 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/24",posZ:1} replace
-execute if entity @s[scores={LOADTimer=125}] run setblock 3310 29 79 redstone_block destroy
-execute if entity @s[scores={LOADTimer=130}] run setblock 3310 28 95 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/25",posZ:1} replace
-execute if entity @s[scores={LOADTimer=130}] run setblock 3310 29 95 redstone_block destroy
-execute if entity @s[scores={LOADTimer=135}] run setblock 3310 28 111 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/26",posZ:1} replace
-execute if entity @s[scores={LOADTimer=135}] run setblock 3310 29 111 redstone_block destroy
-execute if entity @s[scores={LOADTimer=140}] run setblock 3310 28 127 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/27",posZ:1} replace
-execute if entity @s[scores={LOADTimer=140}] run setblock 3310 29 127 redstone_block destroy
-execute if entity @s[scores={LOADTimer=145}] run setblock 3310 28 143 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/28",posZ:1} replace
-execute if entity @s[scores={LOADTimer=145}] run setblock 3310 29 143 redstone_block destroy
-execute if entity @s[scores={LOADTimer=150}] run setblock 3310 28 159 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/29",posZ:1} replace
-execute if entity @s[scores={LOADTimer=150}] run setblock 3310 29 159 redstone_block destroy
-execute if entity @s[scores={LOADTimer=155}] run setblock 3310 28 175 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/30",posZ:1} replace
-execute if entity @s[scores={LOADTimer=155}] run setblock 3310 29 175 redstone_block destroy
-execute if entity @s[scores={LOADTimer=160}] run setblock 3310 28 191 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/31",posZ:1} replace
-execute if entity @s[scores={LOADTimer=160}] run setblock 3310 29 191 redstone_block destroy
+execute if score LOAD Timer matches 5 run setblock 3310 28 -304 air
+execute if score LOAD Timer matches 5 run setblock 3310 28 -304 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/0",} replace
+execute if score LOAD Timer matches 5 run setblock 3310 29 -304 redstone_block destroy
+execute if score LOAD Timer matches 10 run setblock 3310 28 -289 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/1",posZ:1} replace
+execute if score LOAD Timer matches 10 run setblock 3310 29 -289 redstone_block destroy
+execute if score LOAD Timer matches 15 run setblock 3310 28 -273 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/2",posZ:1} replace
+execute if score LOAD Timer matches 15 run setblock 3310 29 -273 redstone_block destroy
+execute if score LOAD Timer matches 20 run setblock 3310 28 -257 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/3",posZ:1} replace
+execute if score LOAD Timer matches 20 run setblock 3310 29 -257 redstone_block destroy
+execute if score LOAD Timer matches 25 run setblock 3310 28 -241 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/4",posZ:1} replace
+execute if score LOAD Timer matches 25 run setblock 3310 29 -241 redstone_block destroy
+execute if score LOAD Timer matches 30 run setblock 3310 28 -225 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/5",posZ:1} replace
+execute if score LOAD Timer matches 30 run setblock 3310 29 -225 redstone_block destroy
+execute if score LOAD Timer matches 35 run setblock 3310 28 -209 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/6",posZ:1} replace
+execute if score LOAD Timer matches 35 run setblock 3310 29 -209 redstone_block destroy
+execute if score LOAD Timer matches 40 run setblock 3310 28 -193 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/7",posZ:1} replace
+execute if score LOAD Timer matches 40 run setblock 3310 29 -193 redstone_block destroy
+execute if score LOAD Timer matches 45 run setblock 3310 28 -177 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/8",posZ:1} replace
+execute if score LOAD Timer matches 45 run setblock 3310 29 -177 redstone_block destroy
+execute if score LOAD Timer matches 50 run setblock 3310 28 -161 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/9",posZ:1} replace
+execute if score LOAD Timer matches 50 run setblock 3310 29 -161 redstone_block destroy
+execute if score LOAD Timer matches 55 run setblock 3310 28 -145 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/10",posZ:1} replace
+execute if score LOAD Timer matches 55 run setblock 3310 29 -145 redstone_block destroy
+execute if score LOAD Timer matches 60 run setblock 3310 28 -129 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/11",posZ:1} replace
+execute if score LOAD Timer matches 60 run setblock 3310 29 -129 redstone_block destroy
+execute if score LOAD Timer matches 65 run setblock 3310 28 -113 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/12",posZ:1} replace
+execute if score LOAD Timer matches 65 run setblock 3310 29 -113 redstone_block destroy
+execute if score LOAD Timer matches 70 run setblock 3310 28 -97 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/13",posZ:1} replace
+execute if score LOAD Timer matches 70 run setblock 3310 29 -97 redstone_block destroy
+execute if score LOAD Timer matches 75 run setblock 3310 28 -81 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/14",posZ:1} replace
+execute if score LOAD Timer matches 75 run setblock 3310 29 -81 redstone_block destroy
+execute if score LOAD Timer matches 80 run setblock 3310 28 -65 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/15",posZ:1} replace
+execute if score LOAD Timer matches 80 run setblock 3310 29 -65 redstone_block destroy
+execute if score LOAD Timer matches 85 run setblock 3310 28 -49 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/16",posZ:1} replace
+execute if score LOAD Timer matches 85 run setblock 3310 29 -49 redstone_block destroy
+execute if score LOAD Timer matches 90 run setblock 3310 28 -33 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/17",posZ:1} replace
+execute if score LOAD Timer matches 90 run setblock 3310 29 -33 redstone_block destroy
+execute if score LOAD Timer matches 95 run setblock 3310 28 -17 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/18",posZ:1} replace
+execute if score LOAD Timer matches 95 run setblock 3310 29 -17 redstone_block destroy
+execute if score LOAD Timer matches 100 run setblock 3310 28 -1 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/19",posZ:1} replace
+execute if score LOAD Timer matches 100 run setblock 3310 29 -1 redstone_block destroy
+execute if score LOAD Timer matches 105 run setblock 3310 28 15 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/20",posZ:1} replace
+execute if score LOAD Timer matches 105 run setblock 3310 29 15 redstone_block destroy
+execute if score LOAD Timer matches 110 run setblock 3310 28 31 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/21",posZ:1} replace
+execute if score LOAD Timer matches 110 run setblock 3310 29 31 redstone_block destroy
+execute if score LOAD Timer matches 115 run setblock 3310 28 47 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/22",posZ:1} replace
+execute if score LOAD Timer matches 115 run setblock 3310 29 47 redstone_block destroy
+execute if score LOAD Timer matches 120 run setblock 3310 28 63 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/23",posZ:1} replace
+execute if score LOAD Timer matches 120 run setblock 3310 29 63 redstone_block destroy
+execute if score LOAD Timer matches 125 run setblock 3310 28 79 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/24",posZ:1} replace
+execute if score LOAD Timer matches 125 run setblock 3310 29 79 redstone_block destroy
+execute if score LOAD Timer matches 130 run setblock 3310 28 95 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/25",posZ:1} replace
+execute if score LOAD Timer matches 130 run setblock 3310 29 95 redstone_block destroy
+execute if score LOAD Timer matches 135 run setblock 3310 28 111 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/26",posZ:1} replace
+execute if score LOAD Timer matches 135 run setblock 3310 29 111 redstone_block destroy
+execute if score LOAD Timer matches 140 run setblock 3310 28 127 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/27",posZ:1} replace
+execute if score LOAD Timer matches 140 run setblock 3310 29 127 redstone_block destroy
+execute if score LOAD Timer matches 145 run setblock 3310 28 143 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/28",posZ:1} replace
+execute if score LOAD Timer matches 145 run setblock 3310 29 143 redstone_block destroy
+execute if score LOAD Timer matches 150 run setblock 3310 28 159 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/29",posZ:1} replace
+execute if score LOAD Timer matches 150 run setblock 3310 29 159 redstone_block destroy
+execute if score LOAD Timer matches 155 run setblock 3310 28 175 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/30",posZ:1} replace
+execute if score LOAD Timer matches 155 run setblock 3310 29 175 redstone_block destroy
+execute if score LOAD Timer matches 160 run setblock 3310 28 191 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"glaciers/31",posZ:1} replace
+execute if score LOAD Timer matches 160 run setblock 3310 29 191 redstone_block destroy
 
-execute if entity @s[scores={LOADTimer=169}] run kill @e[type=area_effect_cloud,tag=GAMESpreadChunkLoad]
-execute if entity @s[scores={LOADTimer=169}] run summon area_effect_cloud ~ ~ ~ {Tags:["GAMESpreadChunkLoad"]}
-execute if entity @s[scores={LOADTimer=169}] run spreadplayers 3315 -301 0 1 false @e[type=area_effect_cloud,tag=GAMESpreadChunkLoad]
-execute if entity @s[scores={LOADTimer=169}] run setblock 3312 28 -304 air
-execute if entity @s[scores={LOADTimer=169}] run setblock 3312 28 -304 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"arena_loader",integrity:0.0f} replace
-execute if entity @s[scores={LOADTimer=169}] run setblock 3312 29 -304 redstone_block destroy
+execute if score LOAD Timer matches 169 run kill @e[type=area_effect_cloud,tag=GAMESpreadChunkLoad]
+execute if score LOAD Timer matches 169 run summon area_effect_cloud ~ ~ ~ {Tags:["GAMESpreadChunkLoad"]}
+execute if score LOAD Timer matches 169 run spreadplayers 3315 -301 0 1 false @e[type=area_effect_cloud,tag=GAMESpreadChunkLoad]
+execute if score LOAD Timer matches 169 run setblock 3312 28 -304 air
+execute if score LOAD Timer matches 169 run setblock 3312 28 -304 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"arena_loader",integrity:0.0f} replace
+execute if score LOAD Timer matches 169 run setblock 3312 29 -304 redstone_block destroy

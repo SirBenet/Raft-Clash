@@ -1,8 +1,8 @@
 # Update air for smoother movement
-data merge entity @s[scores={AirCycle=0}] {Air:0s}
-data merge entity @s[scores={AirCycle=1}] {Air:1s}
-scoreboard players add @s AirCycle 1
-scoreboard players set @s[scores={AirCycle=2}] AirCycle 0
+execute if score AirCycle Timer matches 0 run data merge entity @s {Air:0s}
+execute if score AirCycle Timer matches 1 run data merge entity @s {Air:1s}
+scoreboard players add AirCycle Timer 1
+execute if score AirCycle Timer matches 2 run scoreboard players set AirCycle Timer 0
 
 # AEC move markers
 tag @e[type=area_effect_cloud,tag=AIMove,nbt={Age:-1}] add AIMoveActive

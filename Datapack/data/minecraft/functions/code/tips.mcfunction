@@ -14,8 +14,6 @@ scoreboard players add @s[scores={TipStage=3},name=PhasePlay] TipStage 1
 execute if entity @s[scores={TipStage=4},name=PhaseLobby] run tellraw @a [{"text":"[TIP] ","color":"dark_green"}, {"text":"Explosions can destroy terrain in the glaciers and rocks arenas!"}]
 scoreboard players add @s[scores={TipStage=4},name=PhasePlay] TipStage 1
 
-scoreboard players set @s TipTimer 0
-
 # Player tips
 execute if entity @s[name=PhasePlay] run scoreboard players add @a TipUseHelm 0
 execute if entity @s[name=PhasePlay] run scoreboard players add @a[scores={TipUseHelm=0..}] TipUseHelm 1

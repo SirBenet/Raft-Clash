@@ -29,7 +29,7 @@ setworldspawn 1459 200 -48
 execute if entity @s[tag=RocksReady] run function phase_build/start_callback
 # Else
 execute if entity @s[tag=!RocksReady] run tellraw @a {"text":"Regenerating destructible map, prepare for ~30 seconds of lag.","color":"green"}
-scoreboard players set @s[tag=!RocksReady] LOADTimer 0
+execute if entity @s[tag=!RocksReady] run scoreboard players set LOAD Timer 0
 data merge entity @s[tag=!RocksReady] {CustomName:"\"PhaseLoad\""}
 
 tag @s remove RocksReady

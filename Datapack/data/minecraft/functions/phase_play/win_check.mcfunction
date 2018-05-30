@@ -38,6 +38,3 @@ tag @s[scores={SuccessCount=1}] add GAMEEnd
 # End
 execute if entity @s[tag=GAMEEnd] run playsound ui.toast.challenge_complete master @a ~ ~ ~ 0 1.8 1
 execute if entity @s[tag=GAMEEnd] run function phase_lobby/start
-
-# Clean up
-scoreboard players set @s WinCheckTimer 0

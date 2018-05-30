@@ -7,5 +7,3 @@ execute as @e[type=armor_stand,tag=RAFTBlockStand] at @s if block ~ ~ ~ moving_p
 execute as @e[type=armor_stand,tag=RAFTChest] at @s run function phase_play/validity_check_sink
 # Check chests in valid spot
 execute as @e[type=armor_stand,tag=RAFTChest] at @s run function phase_play/validity_check_chests
-
-scoreboard players set @s ValidityTimer 0

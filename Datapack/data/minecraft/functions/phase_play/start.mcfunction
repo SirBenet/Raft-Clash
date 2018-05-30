@@ -1,7 +1,7 @@
 gamerule doTileDrops false
 gamerule naturalRegeneration false
 data merge entity @s {CustomName:"\"PhasePlay\""}
-scoreboard players set @s ItemTimer 0
+scoreboard players set Item Timer 0
 
 bossbar set build_time visible false
 

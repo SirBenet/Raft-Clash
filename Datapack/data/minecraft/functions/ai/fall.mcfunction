@@ -10,6 +10,3 @@ execute @s[tag=AICannon9] ~ ~ ~ kill @e[type=area_effect_cloud,tag=AICannon9]
 execute @s[tag=AICannon10] ~ ~ ~ kill @e[type=area_effect_cloud,tag=AICannon10]
 execute @s[tag=AICannon11] ~ ~ ~ kill @e[type=area_effect_cloud,tag=AICannon11]
 execute @s[tag=AICannon12] ~ ~ ~ kill @e[type=area_effect_cloud,tag=AICannon12]
-
-#scoreboard players set @s RaftID 0
-#scoreboard players set @s RAFTDirection 0

@@ -6,7 +6,7 @@ execute if entity @s[scores={DeathTime=1}] run function phase_play/respawn
 execute if entity @s[scores={RAFTDealDamage=1..}] as @e[type=shulker,distance=..10,nbt={AbsorptionAmount:0.0f}] at @s run function raft/block_destroy
 scoreboard players set @s[scores={RAFTDealDamage=1..}] RAFTDealDamage 0
 
-# Check if used cannonball (double check just in case)
+# Check if used cannonball (double check just in case they spammed it)
 tag @s[nbt={Inventory:[{id:"minecraft:shears",tag:{Damage:1}}]}] add GAMEUsedCannonball
 tag @s[nbt={Inventory:[{id:"minecraft:shears",tag:{Damage:2}}]}] add GAMEUsedCannonball
 execute if entity @s[tag=GAMEUsedCannonball] run function phase_play/use_cannonball

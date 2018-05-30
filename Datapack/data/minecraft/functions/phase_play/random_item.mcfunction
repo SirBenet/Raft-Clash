@@ -26,6 +26,4 @@ execute as @e[type=item,tag=GAMEItemNew] at @s unless block ~ 40 ~ air run kill 
 
 tag @e[type=item,tag=GAMEItemNew] remove GAMEItemNew
 
-scoreboard players set @s ItemTimer 0
-
 execute at @e[type=item] run particle happy_villager ~ ~ ~ 0.1 0.1 0.1 0 3 force @a[distance=..80]
