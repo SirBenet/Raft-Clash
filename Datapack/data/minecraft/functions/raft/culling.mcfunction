@@ -1,6 +1,6 @@
 # Remove the shulker of far away blocks, to cut down on entities/collisions
 # RAFTCull - A shulker to be culled, unless anything removes the tag before next iteration
-# RAFTCullStand - A stand with no shulker
+# RAFTCullStand - A stand with no shulker (has been culled)
 # RAFTDontCull - Blocks under RAFTHasGravity stuff, maybe more in the future, won't be culled
 
 # Uncull cullstands around the player (other things can also call this, to uncull early)

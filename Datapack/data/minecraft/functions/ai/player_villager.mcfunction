@@ -14,7 +14,7 @@ scoreboard players operation AIPlayerZ WorkSpace -= AICenterZ WorkSpace
 
 # Get components local to way ship is facing
 summon area_effect_cloud ~ ~ ~ {Tags:["VectorGetter"]}
-execute as @e[type=xp_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest] run tp @e[type=area_effect_cloud,tag=VectorGetter,distance=..0.1] 0.0 0.0 0.0 ~ 0
+execute as @e[type=xp_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest] rotated as @s run tp @e[type=area_effect_cloud,tag=VectorGetter,distance=..0.1] 0.0 0.0 0.0 ~ 0
 execute as @e[type=area_effect_cloud,tag=VectorGetter] at @s run function code/get_vectors
 kill @e[type=area_effect_cloud,tag=VectorGetter]
 
