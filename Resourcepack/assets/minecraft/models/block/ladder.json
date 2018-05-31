@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench, a free, modern block model editor by JannisX11",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "blocks/iron_door_upper",
+		"0": "blocks/iron_door_top",
 		"1": "blocks/clock_face_long",
 		"2": "blocks/spruce_planks",
-		"particle": "blocks/iron_door_upper"
+		"particle": "blocks/iron_door_top"
 	},
 	"elements": [
 		{

@@ -3,7 +3,7 @@
 	"ambientocclusion": false,
 	"textures": {
 		"0": "blocks/spruce_planks",
-		"1": "blocks/iron_door_lower",
+		"1": "blocks/iron_door_bottom",
 		"particle": "blocks/spruce_planks"
 	},
 	"elements": [

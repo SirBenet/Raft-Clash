@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "blocks/anvil_base",
 		"1": "blocks/spruce_planks",
-		"2": "blocks/concrete_black",
+		"2": "blocks/black_concrete",
 		"particle": "blocks/anvil_base"
 	},
 	"elements": [

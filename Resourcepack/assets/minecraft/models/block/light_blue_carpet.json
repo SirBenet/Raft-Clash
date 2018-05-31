@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench, a free, modern block model editor by JannisX11",
 	"ambientocclusion": false,
 	"textures": {
-		"0": "blocks/concrete_black",
+		"0": "blocks/black_concrete",
 		"1": "blocks/spruce_planks",
-		"particle": "blocks/concrete_black"
+		"particle": "blocks/black_concrete"
 	},
 	"elements": [
 		{
