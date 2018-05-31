@@ -10,8 +10,8 @@ setblock ~-8 ~64 ~-8 structure_block[mode=load]{mode:"LOAD",name:"hms_lizard_lay
 setblock ~-8 ~65 ~-8 redstone_block destroy
 fill ~-8 ~64 ~-8 ~-8 ~65 ~-8 air
 
-execute positioned ~-6 ~71 ~-1 run summon zombie ~ ~0.5 ~ {Attributes:[{Name:generic.movementSpeed,Base:0.3}],Tags:["AIPathfinder"],NoAI:0b,ArmorItems:[{},{},{},{id:"stone_button",Count:1b}],PersistenceRequired:1b,Invulnerable:1b}
-execute positioned ~-6 ~73 ~-1 run summon villager ~ ~0.5 ~ {Tags:["AIPlayerVillager"],NoAI:1b,PersistenceRequired:1b,Invulnerable:1b}
+execute positioned ~-6 ~71 ~-1 run summon zombie ~ ~0.5 ~ {Attributes:[{Name:generic.movementSpeed,Base:0.3}],Tags:["AIPathfinder"],NoAI:0b,ArmorItems:[{},{},{},{id:"stone_button",Count:1b}],PersistenceRequired:1b,Invulnerable:1b,Silent:1b,ActiveEffects:[{Id:14,Duration:2147483647}]}
+execute positioned ~-6 ~73 ~-1 run summon villager ~ ~0.5 ~ {Tags:["AIPlayerVillager"],NoAI:1b,PersistenceRequired:1b,Invulnerable:1b,Silent:1b,ActiveEffects:[{Id:14,Duration:2147483647}]}
 
 # Store "center" of template (where helm would be)
 summon minecart ~-6 ~71 ~-1 {Tags:["AILayoutCenterPosition"]}
