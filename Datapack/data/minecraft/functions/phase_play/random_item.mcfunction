@@ -11,7 +11,7 @@ execute if entity @s[scores={ItemCycle=6}] at @s run summon item ~ ~ ~ {NoGravit
 execute if entity @s[scores={ItemCycle=7}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
 execute if entity @s[scores={ItemCycle=8}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
 execute if entity @s[scores={ItemCycle=9}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
-execute if entity @s[scores={ItemCycle=10}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomPotionColor:731031,display:{Name:"{\"text\":\"Poseidon's Arrow\",\"italic\":false}",Lore:["§r§7Explodes after 1.5 seconds"]},CustomPotionEffects:[{Id:7,Amplifier:4,Duration:20,Ambient:1b}]}}}
+execute if entity @s[scores={ItemCycle=10}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:trident",Count:1b,tag:{Enchantments:[{id:"loyalty",lvl:1}],Unbreakable:1b}}}
 
 # Spreadplayers the item based on map selected
 execute if entity @s[tag=MAPBay] run spreadplayers 400 -48 0 250 false @e[type=item,tag=GAMEItemNew]

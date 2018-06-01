@@ -29,7 +29,7 @@ particle end_rod ~ ~100 ~ 0.5 0.5 0.5 0 5 force @a[distance=0.1..]
 # Camping respawn screen
 execute if entity @s[scores={DeathTime=0}] run function phase_play/on_respawn_screen
 
-# If standing on moving raft
+# If standing on moving raft, keep up with it
 execute if entity @s[tag=OnRaft1,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft1] run function phase_play/on_raft_movement
 execute if entity @s[tag=OnRaft2,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft2] run function phase_play/on_raft_movement
 execute if entity @s[tag=OnRaft3,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft3] run function phase_play/on_raft_movement
@@ -42,3 +42,9 @@ execute if entity @s[tag=OnRaft9,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb
 execute if entity @s[tag=OnRaft10,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft10] run function phase_play/on_raft_movement
 execute if entity @s[tag=OnRaft11,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft11] run function phase_play/on_raft_movement
 execute if entity @s[tag=OnRaft12,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft12] run function phase_play/on_raft_movement
+
+# If falling, stop culling below me
+execute store result score FallDistance WorkSpace run data get entity @s FallDistance 100
+execute if score FallDistance WorkSpace matches 1.. positioned ~ ~-9 ~ as @e[type=armor_stand,tag=RAFTCullStand,distance=..3] at @s run function raft/cull_stop
+execute if score FallDistance WorkSpace matches 1.. positioned ~ ~-9 ~ run tag @e[type=shulker,tag=RAFTBlock,distance=..5] remove RAFTCull
+scoreboard players set @s FallDistance 0

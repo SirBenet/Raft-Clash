@@ -13,10 +13,10 @@ execute if score RAFTCull Timer matches 2 as @e[type=armor_stand,tag=RAFTBlockSt
 execute if score RAFTCull Timer matches 2 as @e[type=shulker,tag=RAFTBlockJustUnculled] at @s run function raft/update_unculled_shulkers
 execute if score RAFTCull Timer matches 6 run scoreboard players set RAFTCull Timer 0
 
-# Cannonball effects
+# Projectiles
 execute as @e[type=villager,tag=GAMECannonball] at @s run function phase_play/cannonball
-# Arrow effects
 execute as @e[type=arrow] at @s run function phase_play/arrow
+execute as @e[type=trident] at @s run function phase_play/trident
 
 # Per player stuff
 execute as @a[gamemode=!spectator] at @s run function phase_play/per_player
@@ -50,3 +50,8 @@ scoreboard players add WinCheck Timer 1
 execute if score WinCheck Timer matches 40 if entity @s[tag=!AI] run function phase_play/win_check
 execute if score WinCheck Timer matches 40 if entity @s[tag=AI] run function phase_play/win_check_ai
 execute if score WinCheck Timer matches 40 run scoreboard players set WinCheck Timer 0
+
+# Slow cleanup stuff
+scoreboard players add Cleanup Timer 1
+execute if score Cleanup Timer matches 200 run kill @e[type=xp_orb,tag=!RAFTController]
+execute if score Cleanup Timer matches 200 run scoreboard players set Cleanup Timer 0

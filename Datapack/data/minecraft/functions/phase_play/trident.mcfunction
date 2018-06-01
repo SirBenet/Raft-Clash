@@ -4,7 +4,3 @@ tag @e[type=shulker,tag=RAFTBlock,distance=..5] remove RAFTCull
 
 # Ability to hit shulker
 execute as @e[type=shulker,tag=RAFTBlock,distance=..5] run data merge entity @s {Peek:1b}
-
-# Kill
-execute if block ~ ~ ~ water run kill @s
-kill @s[nbt={inGround:1b}]

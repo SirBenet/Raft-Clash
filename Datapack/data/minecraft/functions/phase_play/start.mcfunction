@@ -2,7 +2,7 @@ gamerule doTileDrops false
 gamerule naturalRegeneration false
 data merge entity @s {CustomName:"\"PhasePlay\""}
 scoreboard players set Item Timer 0
-
+kill @e[type=item]
 bossbar set build_time visible false
 
 # Set world border

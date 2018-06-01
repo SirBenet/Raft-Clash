@@ -26,5 +26,5 @@ clear @s iron_pickaxe
 clear @s shears
 clear @s iron_hoe
 clear @s arrow
-clear @s tipped_arrow
+clear @s trident
 clear @s bow
