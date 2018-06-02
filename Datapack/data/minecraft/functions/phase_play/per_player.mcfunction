@@ -12,9 +12,8 @@ tag @s[nbt={Inventory:[{id:"minecraft:shears",tag:{Damage:1}}]}] add GAMEUsedCan
 tag @s[nbt={Inventory:[{id:"minecraft:shears",tag:{Damage:2}}]}] add GAMEUsedCannonball
 execute if entity @s[tag=GAMEUsedCannonball] run function phase_play/use_cannonball
 
-# Allow water detecton
-execute at @s[advancements={technical/entered_water=true}] if block ~ ~ ~ water run function phase_play/teleport_to_chest
-advancement revoke @s[advancements={technical/entered_water=true}] only technical/entered_water
+# Drowning
+execute if block ~ ~ ~ water run function phase_play/drown
 
 # Using helm
 execute if entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:armor_stand",Tags:["RAFTHelmStand"]}}}] run function phase_play/control_raft
