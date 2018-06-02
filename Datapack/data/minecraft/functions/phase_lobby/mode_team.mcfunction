@@ -2,8 +2,10 @@ playsound block.end_portal_frame.fill master @s ~ ~ ~ 1 2
 playsound block.end_portal_frame.fill master @s ~ ~ ~ 1 1
 playsound block.end_portal_frame.fill master @s ~ ~ ~ 1 1.5
 playsound block.end_portal_frame.fill master @s ~ ~ ~ 1 0.5
+setblock ~ ~1 ~ air
+setblock ~ ~ ~ air
+setblock ~ ~ ~ wall_sign[facing=north]{Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"function phase_lobby/mode_ffa\"}}",Text2:"[\"\",{\"text\":\"\\u2620 \"},{\"text\":\"T\",\"bold\":true,\"color\":\"dark_aqua\"},{\"text\":\"E\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"A\",\"bold\":true,\"color\":\"dark_green\"},{\"text\":\"M \",\"bold\":true,\"color\":\"gold\"},{\"text\":\"\\u2620\"}]",Text3:"{\"text\":\"[Change to FFA]\",\"color\":\"dark_gray\"}"}
 setblock ~ ~1 ~ green_carpet
-data merge block ~ ~ ~ {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"function phase_lobby/mode_ffa\"}}",Text2:"[\"\",{\"text\":\"\\u2620 \"},{\"text\":\"T\",\"bold\":true,\"color\":\"dark_aqua\"},{\"text\":\"E\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"A\",\"bold\":true,\"color\":\"dark_green\"},{\"text\":\"M \",\"bold\":true,\"color\":\"gold\"},{\"text\":\"\\u2620\"}]",Text3:"{\"text\":\"[Change to FFA]\",\"color\":\"dark_gray\"}"}
 
 # Change drinks
 setblock -13 16 7 orange_carpet
