@@ -1,3 +1,6 @@
+# Kill/clear the item they took out of hand
+kill @e[type=item,distance=..5,nbt={Item:{id:"minecraft:totem_of_undying"}}]
+kill @e[type=item,distance=..5,nbt={Item:{id:"minecraft:slime_ball"}}]
 clear @s totem_of_undying
 clear @s slime_ball
 
