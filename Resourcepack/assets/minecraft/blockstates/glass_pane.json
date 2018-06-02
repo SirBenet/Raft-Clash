@@ -1,0 +1,5 @@
+{
+    "multipart": [
+        {   "apply": { "model": "glass_pane_post" }}
+    ]
+}

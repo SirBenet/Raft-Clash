@@ -1,0 +1,5 @@
+{
+    "multipart": [
+        {   "apply": { "model": "iron_bars_post_ends" }}
+    ]
+}
