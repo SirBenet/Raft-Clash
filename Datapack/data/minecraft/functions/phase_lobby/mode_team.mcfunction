@@ -23,7 +23,7 @@ summon pig -15 16.0 7 {Team:"NoCollide",DeathLootTable:"minecraft:empty",Saddle:
 summon pig -16 16.0 7 {Team:"NoCollide",DeathLootTable:"minecraft:empty",Saddle:1b,Silent:1b,ActiveEffects:[{Id:14,Duration:2147483647,ShowParticles:0b}],NoAI:1b,Invulnerable:1b,Tags:["ClickDetector","ClickDetectorTeam","yellow"]}
 
 # Make all non-spectators join, respect previous team choice
-execute as @a[team=!spectate] run function phase_lobby/pig_actions/join_team
+execute as @a[team=!spectate] at @s run function phase_lobby/pig_actions/join_team
 
 title @a actionbar [{"selector":"@s"},{"text":" has changed mode to TEAM","color":"gray"}]
 
