@@ -1,13 +1,23 @@
-# Reset respawn screen camping timer
-scoreboard players set @s OnRespawnScreen 0
+scoreboard players set @s UseTotem 0
 
-# Teleport to chest with same RaftID, add eliminated tag if teleport fails
+# Teleport to chest with same RaftID
 function phase_play/teleport_to_chest
 
-# ☠ Elimination
-execute if entity @s[tag=GAMEEliminated] as @a at @s run playsound minecraft:entity.evocation_illager.prepare_summon master @s ~ ~ ~ 2 1.5
-gamemode spectator @s[tag=GAMEEliminated]
-execute if entity @s[tag=GAMEEliminated] run tellraw @a [{"text":"☠ ","color":"dark_gray"},{"selector":"@s"},{"text":" has been eliminated! ☠","color":"dark_gray"}]
+# Replace used-up totem
+replaceitem entity @s weapon.offhand totem_of_undying{display:{Name:"\"\""}}
 
-# Teleport dead spectators to nearest player instead
-tp @s[gamemode=spectator] @a[gamemode=!spectator,sort=nearest,limit=1]
+# Respawn effects
+effect clear @s regeneration
+effect clear @s absorption
+
+effect give @s mining_fatigue 3 10
+effect give @s resistance 3 10
+effect give @s weakness 3 10
+effect give @s blindness 1 10
+effect give @s instant_health 10 20
+effect give @s levitation 1 1 true
+
+execute if entity @s run particle cloud ~ ~1 ~ 0.2 0.2 0.2 0.2 100
+
+execute at @s run playsound block.beacon.power_select master @s ~ ~ ~ 2 2
+execute at @s run particle block gold_block ~ ~1.5 ~ 0.2 0.3 0.2 0 100

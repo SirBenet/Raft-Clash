@@ -5,6 +5,10 @@ scoreboard players set Item Timer 0
 kill @e[type=item]
 bossbar set build_time visible false
 
+# Whether or not player has a valid chest
+tag @a remove HasChest
+replaceitem entity @a weapon.offhand air 
+
 # Set world border
 execute if entity @s[tag=MAPBay] run worldborder center 400 -48
 execute if entity @s[tag=MAPGlaciers] run worldborder center 3568 -48
