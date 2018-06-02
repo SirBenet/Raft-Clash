@@ -7,7 +7,7 @@ bossbar set build_time visible false
 
 # Whether or not player has a valid chest
 tag @a remove HasChest
-replaceitem entity @a weapon.offhand air 
+replaceitem entity @a weapon.offhand slime_ball{display:{Name:"\"\""}}
 
 # Set world border
 execute if entity @s[tag=MAPBay] run worldborder center 400 -48

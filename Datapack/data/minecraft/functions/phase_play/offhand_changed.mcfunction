@@ -1,4 +1,5 @@
 clear @s totem_of_undying
+clear @s slime_ball
 
 # If another item was swapped into offhand, give it back
 give @s[nbt={Inventory:[{id:"minecraft:shears",Slot:-106b}]}] shears{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}
@@ -7,7 +8,7 @@ give @s[nbt={Inventory:[{id:"minecraft:trident",Slot:-106b}]}] trident{Enchantme
 give @s[nbt={Inventory:[{id:"minecraft:bow",Slot:-106b}]}] bow
 
 # Set back to what it's meant to be
-replaceitem entity @s[tag=!HasChest] weapon.offhand air 
+replaceitem entity @s[tag=!HasChest] weapon.offhand slime_ball{display:{Name:"\"\""}}
 replaceitem entity @s[tag=HasChest] weapon.offhand totem_of_undying{display:{Name:"\"\""}}
 
 

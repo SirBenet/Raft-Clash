@@ -53,4 +53,4 @@ scoreboard players set @s FallDistance 0
 
 # Make sure player doesn't mess with offhand slot. TODO: NBT checking is expensive, maybe run this check slower? 
 execute if entity @s[tag=HasChest,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:totem_of_undying"}]}] run function phase_play/offhand_changed
-execute if entity @s[tag=!HasChest,nbt={Inventory:[{Slot:-106b}]}] run function phase_play/offhand_changed
+execute if entity @s[tag=!HasChest,nbt=!{Inventory:[{Slot:-106b,id:"minecraft:slime_ball"}]}] run function phase_play/offhand_changed
