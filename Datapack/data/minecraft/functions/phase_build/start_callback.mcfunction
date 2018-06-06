@@ -44,34 +44,34 @@ give @r[gamemode=!spectator,team=green] birch_fence_gate{display:{Name:"{\"text\
 give @r[gamemode=!spectator,team=yellow] birch_fence_gate{display:{Name:"{\"text\":\"Helm\",\"italic\":false}",Lore:["§r§7Used to control your raft","§r§7Has gravity"]},HideFlags:16,CanPlaceOn:["minecraft:emerald_block","minecraft:iron_block","minecraft:diamond_block","minecraft:redstone_block","minecraft:gold_block","minecraft:red_wool","minecraft:lime_wool","minecraft:cyan_wool","minecraft:yellow_wool","minecraft:light_gray_wool","minecraft:oak_planks","minecraft:acacia_planks","minecraft:jungle_planks","minecraft:dark_oak_planks","minecraft:birch_planks","minecraft:acacia_fence_gate","minecraft:jungle_fence_gate","minecraft:birch_fence_gate","minecraft:barrier","minecraft:glass","minecraft:red_stained_glass","minecraft:cyan_stained_glass","minecraft:lime_stained_glass","minecraft:yellow_stained_glass"]}
 
 # Detect player count, run corrosponding function to give out build blocks
-execute store result score @s PlayerCount if entity @a[gamemode=!spectator]
-execute if entity @s[scores={PlayerCount=1}] run function phase_build/building_supplies_1
-execute if entity @s[scores={PlayerCount=2}] run function phase_build/building_supplies_2
-execute if entity @s[scores={PlayerCount=3}] run function phase_build/building_supplies_3
-execute if entity @s[scores={PlayerCount=4}] run function phase_build/building_supplies_4
-execute if entity @s[scores={PlayerCount=5}] run function phase_build/building_supplies_5
-execute if entity @s[scores={PlayerCount=6}] run function phase_build/building_supplies_6
-execute if entity @s[scores={PlayerCount=7}] run function phase_build/building_supplies_7
-execute if entity @s[scores={PlayerCount=8}] run function phase_build/building_supplies_8
-execute if entity @s[scores={PlayerCount=9}] run function phase_build/building_supplies_9
-execute if entity @s[scores={PlayerCount=10}] run function phase_build/building_supplies_10
-execute if entity @s[scores={PlayerCount=11}] run function phase_build/building_supplies_11
-execute if entity @s[scores={PlayerCount=12..}] run function phase_build/building_supplies_12
+execute store result score PlayerCount Global if entity @a[gamemode=!spectator]
+execute if score PlayerCount Global matches 1.. run function phase_build/building_supplies_1
+execute if score PlayerCount Global matches 2.. run function phase_build/building_supplies_2
+execute if score PlayerCount Global matches 3.. run function phase_build/building_supplies_3
+execute if score PlayerCount Global matches 4.. run function phase_build/building_supplies_4
+execute if score PlayerCount Global matches 5.. run function phase_build/building_supplies_5
+execute if score PlayerCount Global matches 6.. run function phase_build/building_supplies_6
+execute if score PlayerCount Global matches 7.. run function phase_build/building_supplies_7
+execute if score PlayerCount Global matches 8.. run function phase_build/building_supplies_8
+execute if score PlayerCount Global matches 9.. run function phase_build/building_supplies_9
+execute if score PlayerCount Global matches 10.. run function phase_build/building_supplies_10
+execute if score PlayerCount Global matches 11.. run function phase_build/building_supplies_11
+execute if score PlayerCount Global matches 12.. run function phase_build/building_supplies_12
 
 # Set up timer, less for more players (as they have less blocks)
 scoreboard players set @s BuildTimerTick 20
-scoreboard players set @s[scores={PlayerCount=1}] BuildTimerSecond 300
-scoreboard players set @s[scores={PlayerCount=2}] BuildTimerSecond 190
-scoreboard players set @s[scores={PlayerCount=3}] BuildTimerSecond 135
-scoreboard players set @s[scores={PlayerCount=4}] BuildTimerSecond 110
-scoreboard players set @s[scores={PlayerCount=5}] BuildTimerSecond 95
-scoreboard players set @s[scores={PlayerCount=6}] BuildTimerSecond 85
-scoreboard players set @s[scores={PlayerCount=7}] BuildTimerSecond 75
-scoreboard players set @s[scores={PlayerCount=8}] BuildTimerSecond 70
-scoreboard players set @s[scores={PlayerCount=9}] BuildTimerSecond 70
-scoreboard players set @s[scores={PlayerCount=10}] BuildTimerSecond 70
-scoreboard players set @s[scores={PlayerCount=11}] BuildTimerSecond 70
-scoreboard players set @s[scores={PlayerCount=12..}] BuildTimerSecond 70
+execute if score PlayerCount Global matches 1.. run scoreboard players set @s BuildTimerSecond 300
+execute if score PlayerCount Global matches 2.. run scoreboard players set @s BuildTimerSecond 190
+execute if score PlayerCount Global matches 3.. run scoreboard players set @s BuildTimerSecond 135
+execute if score PlayerCount Global matches 4.. run scoreboard players set @s BuildTimerSecond 110
+execute if score PlayerCount Global matches 5.. run scoreboard players set @s BuildTimerSecond 95
+execute if score PlayerCount Global matches 6.. run scoreboard players set @s BuildTimerSecond 85
+execute if score PlayerCount Global matches 7.. run scoreboard players set @s BuildTimerSecond 75
+execute if score PlayerCount Global matches 8.. run scoreboard players set @s BuildTimerSecond 70
+execute if score PlayerCount Global matches 9.. run scoreboard players set @s BuildTimerSecond 70
+execute if score PlayerCount Global matches 10.. run scoreboard players set @s BuildTimerSecond 70
+execute if score PlayerCount Global matches 11.. run scoreboard players set @s BuildTimerSecond 70
+execute if score PlayerCount Global matches 12.. run scoreboard players set @s BuildTimerSecond 70
 
 # Modify timer depending on build timer setting
 execute if entity @s[tag=BuildTimeQuick] run scoreboard players operation @s BuildTimerSecond /= 2 Constants

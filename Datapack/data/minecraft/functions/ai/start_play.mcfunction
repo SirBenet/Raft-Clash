@@ -12,3 +12,13 @@ fill ~ 0 ~ ~ 1 ~ bedrock
 function ai/get_target
 execute at @e[tag=AITarget] positioned ~-512 ~ ~-512 run tag @e[type=area_effect_cloud,tag=AIProjectileArc,dx=1024,dz=1024] add AIProjectileArcOnLevel
 kill @e[type=area_effect_cloud,tag=AIProjectileArc,tag=!AIProjectileArcOnLevel]
+
+# Health
+scoreboard players set AIHealth Global 100
+bossbar set ai_health color green
+bossbar set ai_health max 100
+bossbar set ai_health value 100
+bossbar set ai_health style notched_6
+bossbar set ai_health name {"text":"Captain Coldblood","color":"green","bold":"true"}
+bossbar set ai_health players @a
+bossbar set ai_health visible true
