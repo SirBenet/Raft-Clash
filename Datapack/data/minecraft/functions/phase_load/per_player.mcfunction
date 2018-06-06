@@ -4,7 +4,6 @@ execute if entity @s[scores={LeaveGame=1..}] run function phase_build/player_rel
 # Respawn
 gamemode spectator @s[scores={DeathTime=1}]
 teleport @s[scores={DeathTime=1}] @a[gamemode=!spectator,sort=nearest,limit=1]
-scoreboard players set @s[scores={DeathTime=1}] OnRespawnScreen 0
 
 # Effects
 effect give @s resistance 10 5 true

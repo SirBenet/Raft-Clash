@@ -2,8 +2,10 @@ playsound block.end_portal_frame.fill master @s ~ ~ ~ 1 2
 playsound block.end_portal_frame.fill master @s ~ ~ ~ 1 1
 playsound block.end_portal_frame.fill master @s ~ ~ ~ 1 1.5
 playsound block.end_portal_frame.fill master @s ~ ~ ~ 1 0.5
+setblock ~ ~1 ~ air
+setblock ~ ~ ~ air
+setblock ~ ~ ~ wall_sign[facing=north]{Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"function phase_lobby/mode_ffa\"}}",Text2:"[\"\",{\"text\":\"\\u2620 \"},{\"text\":\"T\",\"bold\":true,\"color\":\"dark_aqua\"},{\"text\":\"E\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"A\",\"bold\":true,\"color\":\"dark_green\"},{\"text\":\"M \",\"bold\":true,\"color\":\"gold\"},{\"text\":\"\\u2620\"}]",Text3:"{\"text\":\"[Change to FFA]\",\"color\":\"dark_gray\"}"}
 setblock ~ ~1 ~ green_carpet
-data merge block ~ ~ ~ {Text1:"{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"function phase_lobby/mode_ffa\"}}",Text2:"[\"\",{\"text\":\"\\u2620 \"},{\"text\":\"T\",\"bold\":true,\"color\":\"dark_aqua\"},{\"text\":\"E\",\"bold\":true,\"color\":\"dark_red\"},{\"text\":\"A\",\"bold\":true,\"color\":\"dark_green\"},{\"text\":\"M \",\"bold\":true,\"color\":\"gold\"},{\"text\":\"\\u2620\"}]",Text3:"{\"text\":\"[Change to FFA]\",\"color\":\"dark_gray\"}"}
 
 # Change drinks
 setblock -13 16 7 orange_carpet
@@ -23,7 +25,7 @@ summon pig -15 16.0 7 {Team:"NoCollide",DeathLootTable:"minecraft:empty",Saddle:
 summon pig -16 16.0 7 {Team:"NoCollide",DeathLootTable:"minecraft:empty",Saddle:1b,Silent:1b,ActiveEffects:[{Id:14,Duration:2147483647,ShowParticles:0b}],NoAI:1b,Invulnerable:1b,Tags:["ClickDetector","ClickDetectorTeam","yellow"]}
 
 # Make all non-spectators join, respect previous team choice
-execute as @a[team=!spectate] run function phase_lobby/pig_actions/join_team
+execute as @a[team=!spectate] at @s run function phase_lobby/pig_actions/join_team
 
 title @a actionbar [{"selector":"@s"},{"text":" has changed mode to TEAM","color":"gray"}]
 

@@ -11,5 +11,5 @@ fill ~ 0 ~ ~ 1 ~ bedrock
 function ai/get_target
 
 # Change AI mode if needed, based on distance to target
-execute if entity @s[tag=AIModeAttack] unless entity @p[gamemode=!spectator,distance=..8] run function ai/enter_control_mode
+#TODO:execute if entity @s[tag=AIModeAttack] unless entity @p[gamemode=!spectator,distance=..8] run function ai/enter_control_mode
 execute if entity @s[tag=AIModeControl] if entity @p[gamemode=!spectator,distance=..8] run function ai/enter_attack_mode

@@ -23,4 +23,10 @@ execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=10}] run tag @e[tag=RAFTN
 execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=11}] run tag @e[tag=RAFTNew] add Raft12
 execute as 0-0-0-0-1 run scoreboard players add @s RaftNumTotal 1
 
+# If this raft has a chest, tag this person/team with HasChest
+execute if entity @e[type=armor_stand,tag=RAFTNew,tag=RAFTChest] run scoreboard players operation @a RaftID -= @s RaftID
+execute if entity @e[type=armor_stand,tag=RAFTNew,tag=RAFTChest] run tag @a[scores={RaftID=0}] add HasChest
+execute if entity @e[type=armor_stand,tag=RAFTNew,tag=RAFTChest] run replaceitem entity @a[scores={RaftID=0}] weapon.offhand totem_of_undying{display:{Name:"\"\""}}
+execute if entity @e[type=armor_stand,tag=RAFTNew,tag=RAFTChest] run scoreboard players operation @a RaftID += @s RaftID
+
 tag @e[tag=RAFTNew] remove RAFTNew

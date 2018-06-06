@@ -1,4 +1,4 @@
-gamerule mobGriefing true
+gamerule mobGriefing false
 
 # Load arena
 kill @e[type=area_effect_cloud,tag=GAMESpreadChunkLoad]
@@ -32,4 +32,5 @@ execute if entity @s[tag=!RocksReady] run tellraw @a {"text":"Regenerating destr
 execute if entity @s[tag=!RocksReady] run scoreboard players set LOAD Timer 0
 data merge entity @s[tag=!RocksReady] {CustomName:"\"PhaseLoad\""}
 
-tag @s remove RocksReady
+#TODO: Uncomment when I make these destructible again
+#tag @s remove RocksReady

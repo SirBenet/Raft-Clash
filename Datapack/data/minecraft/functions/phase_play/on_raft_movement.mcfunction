@@ -14,7 +14,7 @@ execute if entity @s[tag=OnRaft10] as @e[type=xp_orb,tag=!RAFTControllerStopped,
 execute if entity @s[tag=OnRaft11] as @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft11] run function code/get_controller_scores
 execute if entity @s[tag=OnRaft12] as @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft12] run function code/get_controller_scores
 
-# Get my pos relative to controller pos
+# Get my player pos relative to controller pos
 execute store result score PlayerInitialX WorkSpace run data get entity @s Pos[0] 32768
 execute store result score PlayerInitialZ WorkSpace run data get entity @s Pos[2] 32768
 scoreboard players operation PlayerRelativeX WorkSpace = PlayerInitialX WorkSpace
@@ -23,7 +23,7 @@ scoreboard players operation PlayerRelativeX WorkSpace -= HelmX WorkSpace
 scoreboard players operation PlayerRelativeZ WorkSpace -= HelmZ WorkSpace
 
 # Summon marker
-summon area_effect_cloud ~ ~ ~ {Tags:["PlayerMover"],Particle:"block air"}
+execute at @s run summon area_effect_cloud ~ ~ ~ {Tags:["PlayerMover"],Particle:"block air"}
 
 # Do rest of stuff from marker
 scoreboard players operation HelmX WorkSpace += MotionX WorkSpace
