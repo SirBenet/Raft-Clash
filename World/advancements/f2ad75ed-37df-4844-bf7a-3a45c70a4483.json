@@ -385,6 +385,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "warm_ocean": "2018-06-07 23:10:24 +0100",
       "plains": "2018-06-07 15:55:31 +0100",
       "river": "2018-06-07 15:56:08 +0100"
     },
