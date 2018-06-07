@@ -1,0 +1,3 @@
+# Captain coldblood for game
+summon stray ~ ~ ~ {Tags:["AIGame","AIModeControl"],Attributes:[{Name:"generic.maxHealth",Base:1024.0}],Health:1024.0f,Silent:1b,NoAI:1b,PersistenceRequired:1b,DeathLootTable:"minecraft:empty",Passengers:[{id:"slime",Invulnerable:1b,Attributes:[{Name:"generic.maxHealth",Base:20}],Health:20.0f,Tags:["AISlime"],PersistenceRequired:1b,Size:1,Silent:1b,ActiveEffects:[{Id:14,Duration:2147483647,Ambient:1b}]}],CustomName:"{\"color\":\"dark_green\",\"text\":\"Captain Coldblood\"}",ArmorItems:[{},{},{},{id:golden_hoe,Count:1,tag:{Unbreakable:1b,Damage:4}}],HandItems:[{id:golden_hoe,Count:1,tag:{Unbreakable:1b,Damage:6}},{id:golden_hoe,Count:1,tag:{Unbreakable:1b,Damage:5}}]}
+execute as @e[type=stray,tag=AIGame] run function ai/enter_mode_control

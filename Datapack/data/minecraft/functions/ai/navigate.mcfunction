@@ -10,3 +10,9 @@ execute as @e[type=area_effect_cloud,tag=AIProjectileArc] at @s run function ai/
 # From nearest AIProjectileArc to AITarget (prioritize cannonball arcs if they exist) find direction to sail
 execute if entity @e[type=area_effect_cloud,tag=AICannonballArc] at @e[tag=AITarget,limit=1,sort=nearest] as @e[type=area_effect_cloud,tag=AICannonballArc,limit=1,sort=nearest] at @s run function ai/arc_navigate
 execute unless entity @e[type=area_effect_cloud,tag=AICannonballArc] at @e[tag=AITarget,limit=1,sort=nearest] as @e[type=area_effect_cloud,tag=AIArrowArc,limit=1,sort=nearest] at @s run function ai/arc_navigate
+
+# Navigate around obstacles
+#particle barrier ^-25 ^ ^
+#execute unless block ^-25 ^ ^ air run scoreboard players set @e[type=xp_orb,tag=RAFTController,tag=Raft1] AIShipAction 3
+#execute unless block ^-20 ^ ^ air run scoreboard players set @e[type=xp_orb,tag=RAFTController,tag=Raft1] AIShipAction 3
+#execute unless block ^-17 ^ ^ air run scoreboard players set @e[type=xp_orb,tag=RAFTController,tag=Raft1] AIShipAction 3

@@ -3,7 +3,7 @@ setblock ~-8 ~-1 ~-25 structure_block[mode=load]{mode:"LOAD",name:"hms_lizard_li
 setblock ~-8 ~-2 ~-25 redstone_block destroy
 fill ~-8 ~-1 ~-25 ~-8 ~-2 ~-25 water
 
-execute positioned ~-6 ~6 ~-1 run function debug/summon_coldblood_play
+execute positioned ~-6 ~6 ~-1 run function ai/summon_captain_coldblood
 
 # Load in layout template
 setblock ~-8 ~64 ~-8 structure_block[mode=load]{mode:"LOAD",name:"hms_lizard_layout",posY:1} replace

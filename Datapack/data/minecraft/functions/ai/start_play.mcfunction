@@ -15,10 +15,5 @@ kill @e[type=area_effect_cloud,tag=AIProjectileArc,tag=!AIProjectileArcOnLevel]
 
 # Health
 scoreboard players set AIHealth Global 100
-bossbar set ai_health color green
-bossbar set ai_health max 100
 bossbar set ai_health value 100
-bossbar set ai_health style notched_6
-bossbar set ai_health name {"text":"Captain Coldblood","color":"green","bold":"true"}
 bossbar set ai_health players @a
-bossbar set ai_health visible true

@@ -54,4 +54,6 @@ execute if score WinCheck Timer matches 40 run scoreboard players set WinCheck T
 # Slow cleanup stuff
 scoreboard players add Cleanup Timer 1
 execute if score Cleanup Timer matches 200 run kill @e[type=xp_orb,tag=!RAFTController]
+execute if score Cleanup Timer matches 200 run kill @e[type=slime,tag=!AISlime]
+execute if score Cleanup Timer matches 200 run kill @e[type=item,nbt={Item:{id:"minecraft:slime_ball"}}]
 execute if score Cleanup Timer matches 200 run scoreboard players set Cleanup Timer 0

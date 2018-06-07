@@ -19,3 +19,13 @@ execute if score AITeleport Timer matches 3 run scoreboard players set AITelepor
 execute if entity @s[tag=AIModeControl] as @e[type=xp_orb,tag=RAFTController,tag=Raft1] at @s run function ai/do_current_raft_action
 #TODO: Shooting with bow
 #replaceitem entity @s[tag=AIModeBow] armor.head golden_hoe{Damage:10,Unbreakable:1b}
+
+# Melee combat
+execute if score AIAttackAnimation Global matches 1.. run scoreboard players remove AIAttackAnimation Global 1
+execute if score AIAttackAnimation Global matches 1 run replaceitem entity @s armor.head golden_hoe{Damage:8,Unbreakable:1b}
+
+execute if entity @a[distance=..5,scores={DealDamage=1..}] unless entity @s[nbt={HurtTime:0s}] run function ai/melee_damaged
+execute if entity @a[distance=..5,scores={DealDamage=1..}] if entity @e[tag=AISlime,type=slime] unless entity @e[tag=AISlime,type=slime,nbt={HurtTime:0s}] run function ai/melee_damaged
+execute if entity @s[tag=AIModeAttack] if entity @a[distance=..2,scores={TakeDamage=1..}] run function ai/melee_attack
+scoreboard players set @a DealDamage 0
+scoreboard players set @a TakeDamage 0

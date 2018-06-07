@@ -20,7 +20,6 @@ scoreboard objectives setdisplay sidebar
 #setblock 2256 255 -304 structure_block mode=load replace {mode:"LOAD",name:"arena_loader",integrity:0.0f}
 #setblock 2256 254 -304 redstone_block default destroy
 function code:kill_rafts
-kill @e[type=item]
 
 # Reset data bat
 tellraw @a {"text":"Reset arenas","color":"red"}
@@ -65,6 +64,6 @@ setblock -5 17 7 glass_pane
 
 # AI stuff
 setblock -4 22 7 lever[facing=east,powered=false]
-setblock -8 15 16 oak_button[face=floor]
+setblock -8 15 16 spruce_button[face=floor]
 
 kill @e[type=item]
