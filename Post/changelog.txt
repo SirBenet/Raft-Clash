@@ -1,5 +1,5 @@
 - Updated functions to 1.13
 - Rafts now rotate and are controlled with WASD
 - Captain Coldblood has a melee attack mode, if you board their ship
-- Added trident as item
-- 
+- Added trident as rare item
+- Added Update Aquatic touches to the arenas

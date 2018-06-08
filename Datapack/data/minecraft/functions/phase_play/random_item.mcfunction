@@ -21,8 +21,9 @@ execute if entity @s[tag=MAPGlaciers] run spreadplayers 3568 -48 0 250 false @e[
 
 # Kill if not at sea level, else teleport down
 # TODO: Slightly further down so lowest helm can pick up?
-execute as @e[type=item,tag=GAMEItemNew] at @s if block ~ 40 ~ air run teleport @s ~ 43 ~
-execute as @e[type=item,tag=GAMEItemNew] at @s unless block ~ 40 ~ air run kill @s
+execute if entity @s[tag=!MAPSea] as @e[type=item,tag=GAMEItemNew] at @s if block ~ 40 ~ air run teleport @s ~ 43 ~
+execute if entity @s[tag=!MAPSea] as @e[type=item,tag=GAMEItemNew] at @s unless block ~ 40 ~ air run kill @s
+execute if entity @s[tag=MAPSea] as @e[type=item,tag=GAMEItemNew] at @s run teleport @s ~ 66 ~
 
 tag @e[type=item,tag=GAMEItemNew] remove GAMEItemNew
 
