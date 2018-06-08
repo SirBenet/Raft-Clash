@@ -59,32 +59,32 @@ execute if score PlayerCount Global matches 11.. run function phase_build/buildi
 execute if score PlayerCount Global matches 12.. run function phase_build/building_supplies_12
 
 # Set up timer, less for more players (as they have less blocks)
-scoreboard players set @s BuildTimerTick 20
-execute if score PlayerCount Global matches 1.. run scoreboard players set @s BuildTimerSecond 300
-execute if score PlayerCount Global matches 2.. run scoreboard players set @s BuildTimerSecond 190
-execute if score PlayerCount Global matches 3.. run scoreboard players set @s BuildTimerSecond 135
-execute if score PlayerCount Global matches 4.. run scoreboard players set @s BuildTimerSecond 110
-execute if score PlayerCount Global matches 5.. run scoreboard players set @s BuildTimerSecond 95
-execute if score PlayerCount Global matches 6.. run scoreboard players set @s BuildTimerSecond 85
-execute if score PlayerCount Global matches 7.. run scoreboard players set @s BuildTimerSecond 75
-execute if score PlayerCount Global matches 8.. run scoreboard players set @s BuildTimerSecond 70
-execute if score PlayerCount Global matches 9.. run scoreboard players set @s BuildTimerSecond 70
-execute if score PlayerCount Global matches 10.. run scoreboard players set @s BuildTimerSecond 70
-execute if score PlayerCount Global matches 11.. run scoreboard players set @s BuildTimerSecond 70
-execute if score PlayerCount Global matches 12.. run scoreboard players set @s BuildTimerSecond 70
+scoreboard players set BuildTick Timer 20
+execute if score PlayerCount Global matches 1.. run scoreboard players set BuildSecond Timer 300
+execute if score PlayerCount Global matches 2.. run scoreboard players set BuildSecond Timer 190
+execute if score PlayerCount Global matches 3.. run scoreboard players set BuildSecond Timer 135
+execute if score PlayerCount Global matches 4.. run scoreboard players set BuildSecond Timer 110
+execute if score PlayerCount Global matches 5.. run scoreboard players set BuildSecond Timer 95
+execute if score PlayerCount Global matches 6.. run scoreboard players set BuildSecond Timer 85
+execute if score PlayerCount Global matches 7.. run scoreboard players set BuildSecond Timer 75
+execute if score PlayerCount Global matches 8.. run scoreboard players set BuildSecond Timer 70
+execute if score PlayerCount Global matches 9.. run scoreboard players set BuildSecond Timer 70
+execute if score PlayerCount Global matches 10.. run scoreboard players set BuildSecond Timer 70
+execute if score PlayerCount Global matches 11.. run scoreboard players set BuildSecond Timer 70
+execute if score PlayerCount Global matches 12.. run scoreboard players set BuildSecond Timer 70
 
 # Modify timer depending on build timer setting
-execute if entity @s[tag=BuildTimeQuick] run scoreboard players operation @s BuildTimerSecond /= 2 Constants
-execute if entity @s[tag=BuildTimeQuick] run scoreboard players add @s BuildTimerSecond 15
+execute if entity @s[tag=BuildTimeQuick] run scoreboard players operation BuildSecond Timer /= 2 Constants
+execute if entity @s[tag=BuildTimeQuick] run scoreboard players add BuildSecond Timer 15
 
-execute if entity @s[tag=BuildTimeLong] run scoreboard players operation @s BuildTimerSecond *= 4 Constants
-execute if entity @s[tag=BuildTimeLong] run scoreboard players operation @s BuildTimerSecond /= 3 Constants
-execute if entity @s[tag=BuildTimeLong] run scoreboard players add @s BuildTimerSecond 30
+execute if entity @s[tag=BuildTimeLong] run scoreboard players operation BuildSecond Timer *= 4 Constants
+execute if entity @s[tag=BuildTimeLong] run scoreboard players operation BuildSecond Timer /= 3 Constants
+execute if entity @s[tag=BuildTimeLong] run scoreboard players add BuildSecond Timer 30
 
 # Set up boss bar time display
 bossbar set build_time players @a
 bossbar set build_time visible true
 bossbar set build_time color green
 
-execute store result bossbar build_time max run scoreboard players get @s BuildTimerSecond
-execute store result bossbar build_time value run scoreboard players get @s BuildTimerSecond
+execute store result bossbar build_time max run scoreboard players get BuildSecond Timer
+execute store result bossbar build_time value run scoreboard players get BuildSecond Timer

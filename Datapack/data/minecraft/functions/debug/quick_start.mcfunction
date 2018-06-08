@@ -14,5 +14,5 @@ execute at @s run setblock ~-2 ~1 ~ jungle_fence_gate[facing=west]
 
 execute at @s run tp @s ~ ~1 ~
 
-scoreboard players set @e[type=bat,tag=data] BuildTimerTick 1
-scoreboard players set @e[type=bat,tag=data] BuildTimerSecond 0
+scoreboard players set BuildTick Timer 1
+scoreboard players set BuildSecond Timer 0

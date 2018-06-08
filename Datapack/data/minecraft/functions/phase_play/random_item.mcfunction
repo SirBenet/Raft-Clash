@@ -1,17 +1,17 @@
 # Summon item (on a cycle, not actually random)
-scoreboard players add @s ItemCycle 1
-scoreboard players set @s[scores={ItemCycle=11}] ItemCycle 0
-execute if entity @s[scores={ItemCycle=0}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}},Passengers:[{id:"item",Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}},{id:"item",Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}]}
-execute if entity @s[scores={ItemCycle=1}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:bow",Count:1b}}
-execute if entity @s[scores={ItemCycle=2}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:bow",Count:1b}}
-execute if entity @s[scores={ItemCycle=3}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:arrow",Count:16b}}
-execute if entity @s[scores={ItemCycle=4}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:arrow",Count:16b}}
-execute if entity @s[scores={ItemCycle=5}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
-execute if entity @s[scores={ItemCycle=6}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
-execute if entity @s[scores={ItemCycle=7}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
-execute if entity @s[scores={ItemCycle=8}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
-execute if entity @s[scores={ItemCycle=9}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
-execute if entity @s[scores={ItemCycle=10}] at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:trident",Count:1b,tag:{Enchantments:[{id:"loyalty",lvl:1}],Unbreakable:1b}}}
+scoreboard players add ItemCycle Global 1
+execute if score ItemCycle Global matches 11 run scoreboard players set ItemCycle Global 0
+execute if score ItemCycle Global matches 0 at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}},Passengers:[{id:"item",Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}},{id:"item",Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}]}
+execute if score ItemCycle Global matches 1 at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:bow",Count:1b}}
+execute if score ItemCycle Global matches 2 at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:bow",Count:1b}}
+execute if score ItemCycle Global matches 3 at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:arrow",Count:16b}}
+execute if score ItemCycle Global matches 4 at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:arrow",Count:16b}}
+execute if score ItemCycle Global matches 5 at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
+execute if score ItemCycle Global matches 6 at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
+execute if score ItemCycle Global matches 7 at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
+execute if score ItemCycle Global matches 8 at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
+execute if score ItemCycle Global matches 9 at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:shears",Count:1b,tag:{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}}}
+execute if score ItemCycle Global matches 10 at @s run summon item ~ ~ ~ {NoGravity:1b,Tags:["GAMEItem","GAMEItemNew"],Item:{id:"minecraft:trident",Count:1b,tag:{Enchantments:[{id:"loyalty",lvl:1}],Unbreakable:1b}}}
 
 # Spreadplayers the item based on map selected
 execute if entity @s[tag=MAPBay] run spreadplayers 400 -48 0 250 false @e[type=item,tag=GAMEItemNew]

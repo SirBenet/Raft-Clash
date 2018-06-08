@@ -26,7 +26,7 @@ execute at @e[type=area_effect_cloud,tag=GAMESpawnMarkerChosen] run fill ~7 ~ ~-
 execute at @e[type=area_effect_cloud,tag=GAMESpawnMarkerChosen] run fill ~7 ~32 ~7 ~-8 ~32 ~-8 air replace barrier
 
 # Entityze rafts (AI first, since a couple things rely on it having ID 1)
-scoreboard players set @s RaftNumTotal 0
+scoreboard players set RaftNumTotal Global 0
 execute as @e[type=area_effect_cloud,tag=GAMESpawnMarkerChosenAI] at @s align xyz positioned ~0.5 ~0.5 ~0.5 run function raft/create/start
 execute as @e[type=area_effect_cloud,tag=GAMESpawnMarkerChosen] at @s align xyz positioned ~0.5 ~0.5 ~0.5 run function raft/create/start
 

@@ -30,10 +30,10 @@ tag @s[tag=GAMEGreenWon] add GAMEEnd
 tag @s[tag=GAMEYellowWon] add GAMEEnd
 
 # FFA win check
-execute store result score @s SuccessCount if entity @a[team=play,gamemode=!spectator]
-execute if entity @s[scores={SuccessCount=1}] run title @a title [{"selector":"@a[team=play,gamemode=!spectator]"},{"text":" won!","color":"gray"}]
-execute if entity @s[scores={SuccessCount=1}] run tellraw @a [{"selector":"@a[team=play,gamemode=!spectator]"},{"text":" won!","color":"gray"}]
-tag @s[scores={SuccessCount=1}] add GAMEEnd
+execute store result score SuccessCount WorkSpace if entity @a[team=play,gamemode=!spectator]
+execute if score SuccessCount WorkSpace matches 1 run title @a title [{"selector":"@a[team=play,gamemode=!spectator]"},{"text":" won!","color":"gray"}]
+execute if score SuccessCount WorkSpace matches 1 run tellraw @a [{"selector":"@a[team=play,gamemode=!spectator]"},{"text":" won!","color":"gray"}]
+execute if score SuccessCount WorkSpace matches 1 run tag @s add GAMEEnd
 
 # End
 execute if entity @s[tag=GAMEEnd] run playsound ui.toast.challenge_complete master @a ~ ~ ~ 0 1.8 1

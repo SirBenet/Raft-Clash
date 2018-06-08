@@ -9,19 +9,19 @@ execute as @e[tag=RAFTMove,tag=RAFTNew] run function raft/create/apply_position_
 
 # Apply ID and number tag
 scoreboard players operation @e[type=armor_stand,tag=RAFTNew] RaftID = @s RaftID
-execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=0}] run tag @e[tag=RAFTNew] add Raft1
-execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=1}] run tag @e[tag=RAFTNew] add Raft2
-execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=2}] run tag @e[tag=RAFTNew] add Raft3
-execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=3}] run tag @e[tag=RAFTNew] add Raft4
-execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=4}] run tag @e[tag=RAFTNew] add Raft5
-execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=5}] run tag @e[tag=RAFTNew] add Raft6
-execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=6}] run tag @e[tag=RAFTNew] add Raft7
-execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=7}] run tag @e[tag=RAFTNew] add Raft8
-execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=8}] run tag @e[tag=RAFTNew] add Raft9
-execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=9}] run tag @e[tag=RAFTNew] add Raft10
-execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=10}] run tag @e[tag=RAFTNew] add Raft11
-execute as 0-0-0-0-1 if entity @s[scores={RaftNumTotal=11}] run tag @e[tag=RAFTNew] add Raft12
-execute as 0-0-0-0-1 run scoreboard players add @s RaftNumTotal 1
+execute if score RaftNumTotal Global matches 0 run tag @e[tag=RAFTNew] add Raft1
+execute if score RaftNumTotal Global matches 1 run tag @e[tag=RAFTNew] add Raft2
+execute if score RaftNumTotal Global matches 2 run tag @e[tag=RAFTNew] add Raft3
+execute if score RaftNumTotal Global matches 3 run tag @e[tag=RAFTNew] add Raft4
+execute if score RaftNumTotal Global matches 4 run tag @e[tag=RAFTNew] add Raft5
+execute if score RaftNumTotal Global matches 5 run tag @e[tag=RAFTNew] add Raft6
+execute if score RaftNumTotal Global matches 6 run tag @e[tag=RAFTNew] add Raft7
+execute if score RaftNumTotal Global matches 7 run tag @e[tag=RAFTNew] add Raft8
+execute if score RaftNumTotal Global matches 8 run tag @e[tag=RAFTNew] add Raft9
+execute if score RaftNumTotal Global matches 9 run tag @e[tag=RAFTNew] add Raft10
+execute if score RaftNumTotal Global matches 10 run tag @e[tag=RAFTNew] add Raft11
+execute if score RaftNumTotal Global matches 11 run tag @e[tag=RAFTNew] add Raft12
+scoreboard players add RaftNumTotal Global 1
 
 # If this raft has a chest, tag this person/team with HasChest
 execute if entity @e[type=armor_stand,tag=RAFTNew,tag=RAFTChest] run scoreboard players operation @a RaftID -= @s RaftID
