@@ -27,8 +27,8 @@ execute at @e[type=area_effect_cloud,tag=GAMESpawnMarkerChosen] run fill ~7 ~32 
 
 # Entityze rafts (AI first, since a couple things rely on it having ID 1)
 scoreboard players set @s RaftNumTotal 0
-execute as @e[type=area_effect_cloud,tag=GAMESpawnMarkerChosenAI] at @s run function raft/create/start
-execute as @e[type=area_effect_cloud,tag=GAMESpawnMarkerChosen] at @s run function raft/create/start
+execute as @e[type=area_effect_cloud,tag=GAMESpawnMarkerChosenAI] at @s align xyz positioned ~0.5 ~0.5 ~0.5 run function raft/create/start
+execute as @e[type=area_effect_cloud,tag=GAMESpawnMarkerChosen] at @s align xyz positioned ~0.5 ~0.5 ~0.5 run function raft/create/start
 
 # Don't cull blocks below gravity blocks
 execute at @e[type=armor_stand,tag=RAFTHasGravity] positioned ~ ~-1.5 ~ run tag @e[type=shulker,tag=RAFTBlock,distance=..1.1] add RAFTDontCull

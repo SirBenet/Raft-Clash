@@ -14,7 +14,7 @@ execute unless entity @a[gamemode=!spectator] run title @a title [{"text":"Capta
 execute unless entity @a[gamemode=!spectator] run tellraw @a [{"text":"Captain Coldblood won!","color":"dark_green"}]
 
 #TODO: Remove, just here so game doesn't end while I'm testing
-execute if entity @a[tag=DEBUGNoEnd] run tag @s remove GAMEEnd
+#tag @s remove GAMEEnd
 
 # End
 execute if entity @s[tag=GAMEEnd] run playsound ui.toast.challenge_complete master @a ~ ~ ~ 0 1.8 1

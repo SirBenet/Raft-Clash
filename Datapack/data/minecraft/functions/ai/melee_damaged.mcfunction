@@ -7,4 +7,5 @@ scoreboard players remove AIHealth Global 5
 execute store result bossbar ai_health value run scoreboard players get AIHealth Global
 bossbar set ai_health visible true
 
+execute if score AIHealth Global matches ..0 run tp @e[tag=AISlime,type=slime] ~ ~-500 ~
 execute if score AIHealth Global matches ..0 run kill @s
