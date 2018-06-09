@@ -1,12 +1,17 @@
-# Every 3 seconds: Check for falling stuff, load entire raft, update target, change mode (AIModeControl/AIModeMelee)
+# Every 60 ticks: Check for falling stuff, load entire raft, update target, change mode (AIModeControl/AIModeMelee)
 scoreboard players add AICheck Timer 1
 execute if score AICheck Timer matches 61 run function ai/slow_checks
 execute if score AICheck Timer matches 61 run scoreboard players set AICheck Timer 0
 
-# Every 1.5 seconds: Load self and get move direction
+# Every 30 ticks: Load self and get move direction
 scoreboard players add AIMove Timer 1
 execute if score AIMove Timer matches 30 run function ai/navigate
 execute if score AIMove Timer matches 30 run scoreboard players set AIMove Timer 0
+
+# Every 10 ticks: Try to bump away from wall
+scoreboard players add AIBump Timer 1
+execute if score AIBump Timer matches 11 as @e[type=xp_orb,tag=RAFTController,tag=Raft1] at @s positioned ~ ~-43 ~ run function ai/bump
+execute if score AIBump Timer matches 11 run scoreboard players set AIBump Timer 0
 
 # Every 3 ticks: Teleport to mob I'm meant to be tracking (based on mode)
 scoreboard players add AITeleport Timer 1
