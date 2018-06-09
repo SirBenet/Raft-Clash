@@ -13,6 +13,10 @@ execute if score RAFTCull Timer matches 2 as @e[type=armor_stand,tag=RAFTBlockSt
 execute if score RAFTCull Timer matches 2 as @e[type=shulker,tag=RAFTBlockJustUnculled] at @s run function raft/update_unculled_shulkers
 execute if score RAFTCull Timer matches 6 run scoreboard players set RAFTCull Timer 0
 
+# Aircycle
+scoreboard players add AirCycle Timer 1
+execute if score AirCycle Timer matches 2 run scoreboard players set AirCycle Timer 0
+
 # Projectiles
 execute as @e[type=villager,tag=GAMECannonball] at @s run function phase_play/cannonball
 execute as @e[type=arrow] at @s run function phase_play/arrow

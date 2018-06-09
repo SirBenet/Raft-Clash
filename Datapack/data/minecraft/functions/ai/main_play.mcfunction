@@ -1,4 +1,4 @@
-# Every 3 seconds: Check for falling stuff, load entire raft, update target, change mode (AIModeControl/AIModeBow/AIModeMelee)
+# Every 3 seconds: Check for falling stuff, load entire raft, update target, change mode (AIModeControl/AIModeMelee)
 scoreboard players add AICheck Timer 1
 execute if score AICheck Timer matches 61 run function ai/slow_checks
 execute if score AICheck Timer matches 61 run scoreboard players set AICheck Timer 0
@@ -17,8 +17,6 @@ execute if score AITeleport Timer matches 3 run scoreboard players set AITelepor
 
 # Every tick: Carry out current ship action (accelerate, turn)
 execute if entity @s[tag=AIModeControl] as @e[type=xp_orb,tag=RAFTController,tag=Raft1] at @s run function ai/do_current_raft_action
-#TODO: Shooting with bow
-#replaceitem entity @s[tag=AIModeBow] armor.head golden_hoe{Damage:10,Unbreakable:1b}
 
 # Melee combat
 execute if score AIAttackAnimation Global matches 1.. run scoreboard players remove AIAttackAnimation Global 1
