@@ -37,10 +37,10 @@ scoreboard players operation Leftness WorkSpace += LeftZ WorkSpace
 
 # Set ship action
 scoreboard players set @e[type=xp_orb,tag=RAFTController,tag=Raft1] AIShipAction 0
-execute if score Forwardness WorkSpace matches 10000000.. run scoreboard players set @e[type=xp_orb,tag=RAFTController,tag=Raft1] AIShipAction 1
-execute if score Forwardness WorkSpace matches ..-200000000 run scoreboard players set @e[type=xp_orb,tag=RAFTController,tag=Raft1] AIShipAction 2
-execute if score Leftness WorkSpace matches 1000000000.. run scoreboard players set @e[type=xp_orb,tag=RAFTController,tag=Raft1] AIShipAction 2
-execute if score Leftness WorkSpace matches ..-1000000000 run scoreboard players set @e[type=xp_orb,tag=RAFTController,tag=Raft1] AIShipAction 3
+execute if score Forwardness WorkSpace matches 10000000.. run scoreboard players set AIShipAction Global 1
+execute if score Forwardness WorkSpace matches ..-200000000 run scoreboard players set AIShipAction Global 2
+execute if score Leftness WorkSpace matches 1000000000.. run scoreboard players set AIShipAction Global 2
+execute if score Leftness WorkSpace matches ..-1000000000 run scoreboard players set AIShipAction Global 3
 
 # If on target
 execute if entity @e[tag=AITarget,distance=..7] run function ai/arc_on_target

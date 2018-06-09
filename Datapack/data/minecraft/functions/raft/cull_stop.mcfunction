@@ -73,8 +73,8 @@ execute if entity @s[tag=Raft12] run tag @e[type=shulker,tag=RAFTNew,distance=..
 execute store result entity @e[type=armor_stand,tag=RAFTNew,distance=..10,sort=nearest,limit=1] Rotation[0] float 0.000030517578125 run data get entity @s Rotation[0] 32768
 execute as @e[type=shulker,tag=RAFTNew,distance=..10,sort=nearest,limit=1] at @s run tp @s ~ ~ ~ ~ ~
 
-# Restore absorption
-#TODO
+# Restore shulker's absorption
+execute store result entity @e[type=shulker,tag=RAFTNew,distance=..10,sort=nearest,limit=1] AbsorptionAmount float 0.000030517578125 run scoreboard players get @s Absorption
 
 # Update tags
 tag @e[type=armor_stand,tag=RAFTNew,distance=..10,sort=nearest,limit=1] remove RAFTNew

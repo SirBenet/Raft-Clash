@@ -13,6 +13,6 @@ execute unless entity @e[type=area_effect_cloud,tag=AICannonballArc] at @e[tag=A
 
 # Navigate around obstacles
 #particle barrier ^-25 ^ ^
-#execute unless block ^-25 ^ ^ air run scoreboard players set @e[type=xp_orb,tag=RAFTController,tag=Raft1] AIShipAction 3
-#execute unless block ^-20 ^ ^ air run scoreboard players set @e[type=xp_orb,tag=RAFTController,tag=Raft1] AIShipAction 3
-#execute unless block ^-17 ^ ^ air run scoreboard players set @e[type=xp_orb,tag=RAFTController,tag=Raft1] AIShipAction 3
+#execute unless block ^-25 ^ ^ air run scoreboard players set AIShipAction Global 3
+#execute unless block ^-20 ^ ^ air run scoreboard players set AIShipAction Global 3
+#execute unless block ^-17 ^ ^ air run scoreboard players set AIShipAction Global 3

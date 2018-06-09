@@ -23,9 +23,10 @@ execute if entity @s[tag=RAFTBlockColor12] run replaceitem entity @e[type=armor_
 execute if entity @s[tag=RAFTBlockColor13] run replaceitem entity @e[type=armor_stand,tag=RAFTCullingStand,limit=1,distance=..10] armor.head birch_planks
 execute if entity @s[tag=RAFTBlockColor14] run replaceitem entity @e[type=armor_stand,tag=RAFTCullingStand,limit=1,distance=..10] armor.head gold_block
 
+# Store my AbsorptionAmount to stand
+execute store result score @e[type=armor_stand,tag=RAFTCullingStand,limit=1,distance=..10] Absorption run data get entity @s AbsorptionAmount 32768
+
 tag @e[type=armor_stand,tag=RAFTCullingStand,limit=1,distance=..10] add RAFTCullStand
 tag @e[type=armor_stand,tag=RAFTCullingStand,limit=1,distance=..10] remove RAFTCullingStand
-
-#TODO: Store absorption to stand
 
 function raft/delete_shulker_self
