@@ -44,4 +44,4 @@ title @a title {"text":"Start!","color":"green"}
 tellraw @a {"text":"Start!","color":"green"}
 execute if entity @s[tag=FFA] run tellraw @a {"text":"Sink your opponent's treasure chest by destroying the blocks below it, then eliminate them!","color":"dark_green"}
 execute if entity @s[tag=TEAM] run tellraw @a {"text":"Sink the other team's treasure chest by destroying the blocks below it, then eliminate them!","color":"dark_green"}
-execute if entity @s[tag=AI] run tellraw @a {"text":"Sink Captain Coldblood by destroying the blocks below them! ","color":"dark_green"}
+execute if entity @s[tag=AI] run tellraw @a {"text":"Eliminate Captain Coldblood! ","color":"dark_green"}

@@ -1,5 +1,5 @@
 # Resource pack message (not needed for realms)
-tellraw @s {"translate":"You are not using the required resource pack! Click here to download it.","color":"red","bold":"true","clickEvent":{"action":"open_url","value":"http://rebrand.ly/RaftClashRP"},"with":[{"text":"Welcome to Raft Clash!","color":"green"}]}
+tellraw @s {"translate":"You are not using the required resource pack! Click here to download it.","color":"red","bold":"true","clickEvent":{"action":"open_url","value":"http://rebrand.ly/RaftClash2RP"},"with":[{"text":"Welcome to Raft Clash!","color":"green"}]}
 
 # ID
 scoreboard players add $Next PlayerID 1
