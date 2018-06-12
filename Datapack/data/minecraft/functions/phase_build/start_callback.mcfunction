@@ -45,33 +45,33 @@ give @r[gamemode=!spectator,team=yellow] birch_fence_gate{display:{Name:"{\"text
 
 # Detect player count, run corrosponding function to give out build blocks
 execute store result score PlayerCount Global if entity @a[gamemode=!spectator]
-execute if score PlayerCount Global matches 1.. run function phase_build/building_supplies_1
-execute if score PlayerCount Global matches 2.. run function phase_build/building_supplies_2
-execute if score PlayerCount Global matches 3.. run function phase_build/building_supplies_3
-execute if score PlayerCount Global matches 4.. run function phase_build/building_supplies_4
-execute if score PlayerCount Global matches 5.. run function phase_build/building_supplies_5
-execute if score PlayerCount Global matches 6.. run function phase_build/building_supplies_6
-execute if score PlayerCount Global matches 7.. run function phase_build/building_supplies_7
-execute if score PlayerCount Global matches 8.. run function phase_build/building_supplies_8
-execute if score PlayerCount Global matches 9.. run function phase_build/building_supplies_9
-execute if score PlayerCount Global matches 10.. run function phase_build/building_supplies_10
-execute if score PlayerCount Global matches 11.. run function phase_build/building_supplies_11
-execute if score PlayerCount Global matches 12.. run function phase_build/building_supplies_12
+execute if score PlayerCount Global matches 1 run function phase_build/building_supplies_1
+execute if score PlayerCount Global matches 2 run function phase_build/building_supplies_2
+execute if score PlayerCount Global matches 3 run function phase_build/building_supplies_3
+execute if score PlayerCount Global matches 4 run function phase_build/building_supplies_4
+execute if score PlayerCount Global matches 5 run function phase_build/building_supplies_5
+execute if score PlayerCount Global matches 6 run function phase_build/building_supplies_6
+execute if score PlayerCount Global matches 7 run function phase_build/building_supplies_7
+execute if score PlayerCount Global matches 8 run function phase_build/building_supplies_8
+execute if score PlayerCount Global matches 9 run function phase_build/building_supplies_9
+execute if score PlayerCount Global matches 10 run function phase_build/building_supplies_10
+execute if score PlayerCount Global matches 11 run function phase_build/building_supplies_11
+execute if score PlayerCount Global matches 12 run function phase_build/building_supplies_12
 
 # Set up timer, less for more players (as they have less blocks)
 scoreboard players set BuildTick Timer 20
-execute if score PlayerCount Global matches 1.. run scoreboard players set BuildSecond Timer 300
-execute if score PlayerCount Global matches 2.. run scoreboard players set BuildSecond Timer 190
-execute if score PlayerCount Global matches 3.. run scoreboard players set BuildSecond Timer 135
-execute if score PlayerCount Global matches 4.. run scoreboard players set BuildSecond Timer 110
-execute if score PlayerCount Global matches 5.. run scoreboard players set BuildSecond Timer 95
-execute if score PlayerCount Global matches 6.. run scoreboard players set BuildSecond Timer 85
-execute if score PlayerCount Global matches 7.. run scoreboard players set BuildSecond Timer 75
-execute if score PlayerCount Global matches 8.. run scoreboard players set BuildSecond Timer 70
-execute if score PlayerCount Global matches 9.. run scoreboard players set BuildSecond Timer 70
-execute if score PlayerCount Global matches 10.. run scoreboard players set BuildSecond Timer 70
-execute if score PlayerCount Global matches 11.. run scoreboard players set BuildSecond Timer 70
-execute if score PlayerCount Global matches 12.. run scoreboard players set BuildSecond Timer 70
+execute if score PlayerCount Global matches 1 run scoreboard players set BuildSecond Timer 300
+execute if score PlayerCount Global matches 2 run scoreboard players set BuildSecond Timer 190
+execute if score PlayerCount Global matches 3 run scoreboard players set BuildSecond Timer 135
+execute if score PlayerCount Global matches 4 run scoreboard players set BuildSecond Timer 110
+execute if score PlayerCount Global matches 5 run scoreboard players set BuildSecond Timer 95
+execute if score PlayerCount Global matches 6 run scoreboard players set BuildSecond Timer 85
+execute if score PlayerCount Global matches 7 run scoreboard players set BuildSecond Timer 75
+execute if score PlayerCount Global matches 8 run scoreboard players set BuildSecond Timer 70
+execute if score PlayerCount Global matches 9 run scoreboard players set BuildSecond Timer 70
+execute if score PlayerCount Global matches 10 run scoreboard players set BuildSecond Timer 70
+execute if score PlayerCount Global matches 11 run scoreboard players set BuildSecond Timer 70
+execute if score PlayerCount Global matches 12 run scoreboard players set BuildSecond Timer 70
 
 # Modify timer depending on build timer setting
 execute if entity @s[tag=BuildTimeQuick] run scoreboard players operation BuildSecond Timer /= 2 Constants
