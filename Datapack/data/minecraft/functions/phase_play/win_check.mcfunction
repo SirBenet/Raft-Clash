@@ -24,6 +24,10 @@ execute if entity @s[tag=GAMEBlueWon] run tellraw @a [{"text":"Blue won!","color
 execute if entity @s[tag=GAMERedWon] run tellraw @a [{"text":"Red won!","color":"red"}]
 execute if entity @s[tag=GAMEGreenWon] run tellraw @a [{"text":"Green won!","color":"green"}]
 execute if entity @s[tag=GAMEYellowWon] run tellraw @a [{"text":"Yellow won!","color":"yellow"}]
+#execute if entity @s[tag=GAMEBlueWon] run particle dust 0 0 1 10 -12.5 17.00 3.5 10 3 10 0 500 force
+#execute if entity @s[tag=GAMERedWon] run particle dust 1 0 0 10 -12.5 17.00 3.5 10 3 10 0 500 force
+#execute if entity @s[tag=GAMEGreenWon] run particle dust 0 1 0 10 -12.5 17.00 3.5 10 3 10 0 500 force
+#execute if entity @s[tag=GAMEYellowWon] run particle dust 1 1 0 10 -12.5 17.00 3.5 10 3 10 0 500 force
 tag @s[tag=GAMEBlueWon] add GAMEEnd
 tag @s[tag=GAMERedWon] add GAMEEnd
 tag @s[tag=GAMEGreenWon] add GAMEEnd
@@ -33,6 +37,7 @@ tag @s[tag=GAMEYellowWon] add GAMEEnd
 execute store result score SuccessCount WorkSpace if entity @a[team=play,gamemode=!spectator]
 execute if score SuccessCount WorkSpace matches 1 run title @a title [{"selector":"@a[team=play,gamemode=!spectator]"},{"text":" won!","color":"gray"}]
 execute if score SuccessCount WorkSpace matches 1 run tellraw @a [{"selector":"@a[team=play,gamemode=!spectator]"},{"text":" won!","color":"gray"}]
+#execute if score SuccessCount WorkSpace matches 1 run particle dust 1 1 1 10 -12.5 17.00 3.5 10 3 10 0 500 force
 execute if score SuccessCount WorkSpace matches 1 run tag @s add GAMEEnd
 
 # End

@@ -8,9 +8,9 @@ execute if score RAFTMove Timer matches 3 run scoreboard players set RAFTMove Ti
 # Culling
 scoreboard players add RAFTCull Timer 1
 execute if score RAFTCull Timer matches 1 run kill @e[type=armor_stand,tag=RAFTDyingCullStand]
-execute if score RAFTCull Timer matches 1 run function raft/culling
-execute if score RAFTCull Timer matches 2 as @e[type=armor_stand,tag=RAFTBlockStandJustUnculled] at @s run function raft/update_unculled_stands
-execute if score RAFTCull Timer matches 2 as @e[type=shulker,tag=RAFTBlockJustUnculled] at @s run function raft/update_unculled_shulkers
+execute if score RAFTCull Timer matches 1 run function raft/cull/main
+execute if score RAFTCull Timer matches 2 as @e[type=armor_stand,tag=RAFTBlockStandJustUnculled] at @s run function raft/cull/update_unculled_stands
+execute if score RAFTCull Timer matches 2 as @e[type=shulker,tag=RAFTBlockJustUnculled] at @s run function raft/cull/update_unculled_shulkers
 execute if score RAFTCull Timer matches 6 run scoreboard players set RAFTCull Timer 0
 
 # Aircycle

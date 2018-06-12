@@ -18,7 +18,6 @@ execute if entity @s[tag=!RAFTControllerStopped,tag=Raft9] run tp @e[type=armor_
 execute if entity @s[tag=!RAFTControllerStopped,tag=Raft10] run tp @e[type=armor_stand,tag=RAFTMove,tag=Raft10] ~ ~-40 ~ ~ ~
 execute if entity @s[tag=!RAFTControllerStopped,tag=Raft11] run tp @e[type=armor_stand,tag=RAFTMove,tag=Raft11] ~ ~-40 ~ ~ ~
 execute if entity @s[tag=!RAFTControllerStopped,tag=Raft12] run tp @e[type=armor_stand,tag=RAFTMove,tag=Raft12] ~ ~-40 ~ ~ ~
-#TODO: distance=..40 improves performance?
 
 execute if entity @s[tag=!RAFTControllerStopped,tag=Raft1] positioned ~ ~-40 ~ as @e[type=armor_stand,tag=RAFTMove,tag=Raft1] run function raft/move/move_raft_blocks
 execute if entity @s[tag=!RAFTControllerStopped,tag=Raft2] positioned ~ ~-40 ~ as @e[type=armor_stand,tag=RAFTMove,tag=Raft2] run function raft/move/move_raft_blocks

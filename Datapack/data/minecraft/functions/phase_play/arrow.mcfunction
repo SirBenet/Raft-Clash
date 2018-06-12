@@ -1,5 +1,5 @@
 # Uncull stands around me
-execute as @e[type=armor_stand,tag=RAFTCullStand,distance=..5] at @s run function raft/cull_stop
+execute as @e[type=armor_stand,tag=RAFTCullStand,distance=..5] at @s run function raft/cull/stop
 tag @e[type=shulker,tag=RAFTBlock,distance=..5] remove RAFTCull
 
 # Aircylce AI arrows for smooth movement

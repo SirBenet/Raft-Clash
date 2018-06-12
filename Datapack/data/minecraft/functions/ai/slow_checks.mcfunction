@@ -3,10 +3,8 @@ setblock ~ 0 ~ structure_block[mode=load]{mode:"LOAD",name:"ship_loader",integri
 setblock ~ 1 ~ redstone_block destroy
 fill ~ 0 ~ ~ 1 ~ bedrock
 
-#TODO: Check if cannons are falling, remove their arcs
-#scoreboard players tag @e[type=armor_stand,score_RaftID_min=-5,score_RaftID=-5] remove AINotFalling
-#scoreboard players tag @e[type=armor_stand,score_RaftID_min=-5,score_RaftID=-5] add AINotFalling {FallDistance:0.0f}
-#execute @e[type=armor_stand,score_RaftID_min=-5,score_RaftID=-5,tag=!AINotFalling] ~ ~ ~ function ai:fall
+# Check if cannons have fallen, remove their arcs
+execute as @e[type=armor_stand,tag=RAFTCannonStand,tag=Raft1,tag=!AIFallenCannon] at @s if block ~ ~ ~ water run function ai/fall
 
 function ai/get_target
 

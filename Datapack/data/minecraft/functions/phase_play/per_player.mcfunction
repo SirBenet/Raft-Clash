@@ -46,7 +46,7 @@ execute if entity @s[tag=OnRaft12,nbt=!{RootVehicle:{}}] if entity @e[type=xp_or
 
 # If falling, stop culling below me
 execute store result score FallDistance WorkSpace run data get entity @s FallDistance 100
-execute if score FallDistance WorkSpace matches 1.. positioned ~ ~-9 ~ as @e[type=armor_stand,tag=RAFTCullStand,distance=..3] at @s run function raft/cull_stop
+execute if score FallDistance WorkSpace matches 1.. positioned ~ ~-9 ~ as @e[type=armor_stand,tag=RAFTCullStand,distance=..3] at @s run function raft/cull/stop
 execute if score FallDistance WorkSpace matches 1.. positioned ~ ~-9 ~ run tag @e[type=shulker,tag=RAFTBlock,distance=..5] remove RAFTCull
 
 # Make sure player doesn't mess with offhand slot. TODO: NBT checking is expensive, maybe run this check slower? 
