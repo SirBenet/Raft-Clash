@@ -2,10 +2,10 @@
 tp @s ~ ~ ~ facing entity @e[tag=AITarget,limit=1,sort=nearest]
 
 # Debug particles
-execute rotated as @s run particle barrier
-execute rotated as @s run particle flame ^ ^ ^1
-execute rotated as @s run particle flame ^ ^ ^2
-execute rotated as @s run particle flame ^ ^ ^3
+#execute rotated as @s run particle barrier
+#execute rotated as @s run particle flame ^ ^ ^1
+#execute rotated as @s run particle flame ^ ^ ^2
+#execute rotated as @s run particle flame ^ ^ ^3
 
 # Get my forward vector
 summon area_effect_cloud ~ ~ ~ {Tags:["VectorGetter"]}

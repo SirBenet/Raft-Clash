@@ -24,6 +24,7 @@ execute if entity @s[scores={DropCutlass=1..}] run function phase_play/drop_cutl
 # Handle relogging players
 execute if entity @s[scores={LeaveGame=1..}] run function phase_play/player_relog
 
+
 # XP
 xp set @s 0
 
