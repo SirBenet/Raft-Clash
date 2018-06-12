@@ -1,8 +1,8 @@
 # Kill/clear the item they took out of hand
 kill @e[type=item,distance=..5,nbt={Item:{id:"minecraft:totem_of_undying"}}]
-kill @e[type=item,distance=..5,nbt={Item:{id:"minecraft:slime_ball"}}]
+kill @e[type=item,distance=..5,nbt={Item:{id:"minecraft:scute"}}]
 clear @s totem_of_undying
-clear @s slime_ball
+clear @s scute
 
 # If another item was swapped into offhand, give it back
 give @s[nbt={Inventory:[{id:"minecraft:shears",Slot:-106b}]}] shears{display:{Name:"{\"text\":\"Cannonball\",\"italic\":false}",Lore:["§r§7Use on a cannon to fire"]}}
@@ -11,7 +11,7 @@ give @s[nbt={Inventory:[{id:"minecraft:trident",Slot:-106b}]}] trident{Enchantme
 give @s[nbt={Inventory:[{id:"minecraft:bow",Slot:-106b}]}] bow
 
 # Set back to what it's meant to be
-replaceitem entity @s[tag=!HasChest] weapon.offhand slime_ball{display:{Name:"\"\""}}
+replaceitem entity @s[tag=!HasChest] weapon.offhand scute{display:{Name:"\"\""}}
 replaceitem entity @s[tag=HasChest] weapon.offhand totem_of_undying{display:{Name:"\"\""}}
 
 
