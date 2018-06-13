@@ -1,3 +1,6 @@
+#TODO: Remove
+say unculling
+
 # Called from culled armorstand that needs to turn back into stand + shulker
 
 # Summon new blockstand + shulker 

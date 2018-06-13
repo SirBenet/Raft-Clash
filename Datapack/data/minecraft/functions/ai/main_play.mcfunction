@@ -32,3 +32,6 @@ execute if entity @a[distance=..5,scores={DealDamage=1..}] if entity @e[tag=AISl
 execute if entity @s[tag=AIModeAttack] if entity @a[distance=..2,scores={TakeDamage=1..}] run function ai/melee_attack
 scoreboard players set @a DealDamage 0
 scoreboard players set @a TakeDamage 0
+
+# Beam
+particle end_rod ~ ~100 ~ 0.5 0.5 0.5 0 5 force @a
