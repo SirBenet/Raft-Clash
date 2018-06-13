@@ -27,7 +27,8 @@ tag 0-0-0-0-1 add GlaciersReady
 tag 0-0-0-0-1 add RocksReady
 data merge entity 0-0-0-0-1 {CustomName:"\"PhaseLobby\""}
 
-scoreboard players set @e[type=bat,tag=data] TipStage 0
+scoreboard players set PlayTipStage Global 0
+scoreboard players set BuildTipStage Global 0
 
 # --- HOVER TEXT ---
 kill @e[type=area_effect_cloud,tag=HoverText]
