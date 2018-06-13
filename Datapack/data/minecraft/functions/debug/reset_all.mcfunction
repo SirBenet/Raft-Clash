@@ -1,6 +1,8 @@
 gamerule sendCommandFeedback true
 gamerule keepInventory true
 gamerule spectatorsGenerateChunks false
+gamerule doMobSpawning false
+gamerule randomTickSpeed 0
 scoreboard objectives setdisplay sidebar
 
 # Load arenas, kill stray stuff
@@ -19,10 +21,9 @@ scoreboard objectives setdisplay sidebar
 #setblock 144 254 -304 redstone_block default destroy
 #setblock 2256 255 -304 structure_block mode=load replace {mode:"LOAD",name:"arena_loader",integrity:0.0f}
 #setblock 2256 254 -304 redstone_block default destroy
-function code:kill_rafts
+#function code/kill_rafts
 
 # Reset data bat
-tellraw @a {"text":"Reset arenas","color":"red"}
 tag 0-0-0-0-1 add GlaciersReady
 tag 0-0-0-0-1 add RocksReady
 data merge entity 0-0-0-0-1 {CustomName:"\"PhaseLobby\""}
