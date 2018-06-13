@@ -7,7 +7,7 @@
 execute at @a positioned ~ ~1 ~ as @e[type=armor_stand,distance=..5,tag=RAFTCullStand] at @s run function raft/cull/stop
 
 # Don't cull shulkers around players
-execute at @a positioned ~ ~1 ~ run tag @e[type=shulker,distance=..5,tag=RAFTCull] remove RAFTCull
+execute at @a[gamemode=!spectator] positioned ~ ~1 ~ run tag @e[type=shulker,distance=..5,tag=RAFTCull] remove RAFTCull
 # Cull shulkers that haven't had the tag removed by anything
 execute as @e[type=shulker,tag=RAFTCull] at @s run function raft/cull/start
 # At end to let arrows/cannonballs/etc. remove this tag before next call
