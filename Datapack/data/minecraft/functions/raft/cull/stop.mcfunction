@@ -1,5 +1,4 @@
-#TODO: Remove
-say unculling
+say cull stop
 
 # Called from culled armorstand that needs to turn back into stand + shulker
 
