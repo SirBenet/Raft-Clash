@@ -1,5 +1,3 @@
-say cull start
-
 # Called from shulker that needs to be culled
 # RAFTCullingStand - My stand
 

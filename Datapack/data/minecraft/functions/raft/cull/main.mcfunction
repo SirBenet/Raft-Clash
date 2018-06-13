@@ -4,7 +4,7 @@
 # RAFTDontCull - Blocks under RAFTHasGravity stuff, maybe more in the future, won't be culled
 
 # Uncull cullstands around the player (other things can also call this, to uncull early)
-execute at @a[gamemode=!spectator] positioned ~ ~1 ~ as @e[type=armor_stand,distance=..5,tag=RAFTCullStand,tag=!RAFTDyingCullStand] at @s run function raft/cull/stop
+execute at @a[gamemode=!spectator] positioned ~ ~1 ~ as @e[type=armor_stand,distance=..5,tag=RAFTCullStand] at @s run function raft/cull/stop
 
 # Don't cull shulkers around players
 execute at @a[gamemode=!spectator] positioned ~ ~1 ~ run tag @e[type=shulker,distance=..5,tag=RAFTCull] remove RAFTCull
