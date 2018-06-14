@@ -19,5 +19,5 @@ execute positioned as @s[tag=z2] run tp @s ^ ^ ^2
 execute positioned as @s[tag=z1] run tp @s ^ ^ ^1
 
 # Apply Y offset score and motion, for falling gravity blocks
-execute store result entity @s[tag=RAFTHasGravity,scores={RAFTGravOffset=1..}] Motion[1] double 0.000030517578125 run scoreboard players get @s RAFTGravMotion
 execute store result entity @s[tag=RAFTHasGravity,scores={RAFTGravOffset=1..}] Pos[1] double 0.000030517578125 run scoreboard players get @s RAFTGravOffset
+execute store result entity @s[tag=RAFTHasGravity,scores={RAFTGravOffset=1..}] Motion[1] double 0.000030517578125 run scoreboard players get @s RAFTGravMotion
