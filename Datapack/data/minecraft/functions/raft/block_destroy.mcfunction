@@ -17,7 +17,22 @@ execute if entity @s[tag=RAFTBlockColor12] run particle block yellow_wool ~ ~0.5
 execute if entity @s[tag=RAFTBlockColor13] run particle block birch_planks ~ ~0.5 ~ 0.2 0.2 0.2 0.1 100 normal @a
 execute if entity @s[tag=RAFTBlockColor14] run particle block gold_block ~ ~0.5 ~ 0.2 0.2 0.2 0.1 100 normal @a
 
-playsound entity.zombie.break_door_wood master @a ~ ~ ~ 2 2
+# Particles depending on block type
+execute if entity @s[tag=RAFTBlockColor0] run playsound block.cloth.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor1] run playsound block.wood.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor2] run playsound block.stone.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor3] run playsound block.cloth.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor4] run playsound block.wood.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor5] run playsound block.stone.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor6] run playsound block.cloth.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor7] run playsound block.wood.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor8] run playsound block.stone.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor9] run playsound block.cloth.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor10] run playsound block.wood.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor11] run playsound block.stone.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor12] run playsound block.cloth.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor13] run playsound block.wood.break master @a ~ ~ ~ 2 1
+execute if entity @s[tag=RAFTBlockColor14] run playsound block.stone.break master @a ~ ~ ~ 2 1
 
 # If AI block, delete barrier block on template
 execute if entity @e[type=bat,tag=data,tag=AI] as @e[type=armor_stand,tag=RAFTBlockStand,limit=1,distance=..2,sort=nearest] if entity @s[tag=Raft1] at @s run function ai/delete_template_block
