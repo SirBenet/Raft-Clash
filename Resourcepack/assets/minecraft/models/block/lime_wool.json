@@ -8,6 +8,6 @@
 		}
 	},
     "textures": {
-        "all": "blocks/lime_wool"
+        "all": "block/lime_wool"
     }
 }

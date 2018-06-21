@@ -8,6 +8,6 @@
 		}
 	},
     "textures": {
-        "all": "blocks/dark_oak_planks"
+        "all": "block/dark_oak_planks"
     }
 }

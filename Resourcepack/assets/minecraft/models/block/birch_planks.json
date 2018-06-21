@@ -8,6 +8,6 @@
 		}
 	},
     "textures": {
-        "all": "blocks/birch_planks"
+        "all": "block/birch_planks"
     }
 }

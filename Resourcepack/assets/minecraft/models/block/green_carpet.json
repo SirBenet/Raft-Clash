@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench, a free, modern block model editor by JannisX11",
 	"textures": {
-		"0": "blocks/spruce_planks",
-		"1": "blocks/banner_teams",
-		"particle": "blocks/spruce_planks"
+		"0": "block/spruce_planks",
+		"1": "block/banner_teams",
+		"particle": "block/spruce_planks"
 	},
 	"elements": [
 		{

@@ -8,6 +8,6 @@
 		}
 	},
     "textures": {
-        "all": "blocks/redstone_block"
+        "all": "block/redstone_block"
     }
 }

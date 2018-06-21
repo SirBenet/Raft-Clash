@@ -8,6 +8,6 @@
 		}
 	},
     "textures": {
-        "all": "blocks/diamond_block"
+        "all": "block/diamond_block"
     }
 }

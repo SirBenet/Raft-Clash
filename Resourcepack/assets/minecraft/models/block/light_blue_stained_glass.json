@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench, a free, modern block model editor by JannisX11",
 	"textures": {
-		"0": "blocks/map_glaciers",
-		"particle": "blocks/map_glaciers"
+		"0": "block/map_glaciers",
+		"particle": "block/map_glaciers"
 	},
 	"elements": [
 		{

@@ -8,6 +8,6 @@
 		}
 	},
     "textures": {
-        "all": "blocks/iron_block"
+        "all": "block/iron_block"
     }
 }

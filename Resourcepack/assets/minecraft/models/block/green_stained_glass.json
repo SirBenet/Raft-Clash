@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench, a free, modern block model editor by JannisX11",
 	"textures": {
-		"0": "blocks/map_bay",
-		"particle": "blocks/map_bay"
+		"0": "block/map_bay",
+		"particle": "block/map_bay"
 	},
 	"elements": [
 		{

@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench, a free, modern block model editor by JannisX11",
-	"textures": {"2": "blocks/black_concrete"},
+	"textures": {"2": "block/black_concrete"},
 	"elements": [
 		{
 			"name": "cube",

@@ -8,6 +8,6 @@
 		}
 	},
     "textures": {
-        "all": "blocks/emerald_block"
+        "all": "block/emerald_block"
     }
 }

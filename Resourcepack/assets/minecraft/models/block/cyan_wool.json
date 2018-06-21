@@ -8,6 +8,6 @@
 		}
 	},
     "textures": {
-        "all": "blocks/cyan_wool"
+        "all": "block/cyan_wool"
     }
 }
