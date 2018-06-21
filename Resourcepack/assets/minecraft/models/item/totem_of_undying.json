@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench, a free, modern block model editor by JannisX11",
 	"textures": {
-		"0": "items/valid_chest",
-		"particle": "items/valid_chest"
+		"0": "item/valid_chest",
+		"particle": "item/valid_chest"
 	},
 	"elements": [
 		{

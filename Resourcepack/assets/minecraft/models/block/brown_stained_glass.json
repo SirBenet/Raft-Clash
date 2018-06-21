@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench, a free, modern block model editor by JannisX11",
 	"textures": {
-		"0": "items/pirate_hat",
-		"particle": "items/pirate_hat"
+		"0": "item/pirate_hat",
+		"particle": "item/pirate_hat"
 	},
 	"elements": [
 		{

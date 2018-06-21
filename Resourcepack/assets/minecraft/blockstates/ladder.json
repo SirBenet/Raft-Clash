@@ -1,8 +1,8 @@
 {
     "variants": {
-        "facing=north": { "model": "ladder" },
-        "facing=east":  { "model": "ladder" },
-        "facing=south": { "model": "ladder" },
-        "facing=west":  { "model": "ladder" }
+        "facing=north": { "model": "block/ladder" },
+        "facing=east":  { "model": "block/ladder" },
+        "facing=south": { "model": "block/ladder" },
+        "facing=west":  { "model": "block/ladder" }
     }
 }

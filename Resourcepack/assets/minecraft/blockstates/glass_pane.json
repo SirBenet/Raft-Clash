@@ -1,5 +1,5 @@
 {
     "multipart": [
-        {   "apply": { "model": "glass_pane_post" }}
+        {   "apply": { "model": "block/glass_pane_post" }}
     ]
 }
