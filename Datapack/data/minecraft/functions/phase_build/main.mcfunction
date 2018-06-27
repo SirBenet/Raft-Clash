@@ -7,6 +7,9 @@ execute unless entity @a[tag=BUILDHasMaterials,gamemode=!spectator] if score Bui
 # Handle dropped items
 execute as @e[type=item,tag=!BUILDModified] run data merge entity @s {Tags:["BUILDModified"],Item:{tag:{HideFlags:16,CanPlaceOn:["minecraft:emerald_block","minecraft:iron_block","minecraft:diamond_block","minecraft:redstone_block","minecraft:gold_block","minecraft:red_wool","minecraft:lime_wool","minecraft:cyan_wool","minecraft:yellow_wool","minecraft:light_gray_wool","minecraft:oak_planks","minecraft:acacia_planks","minecraft:jungle_planks","minecraft:dark_oak_planks","minecraft:birch_planks","minecraft:acacia_fence_gate","minecraft:jungle_fence_gate","minecraft:birch_fence_gate","minecraft:barrier","minecraft:glass","minecraft:red_stained_glass","minecraft:cyan_stained_glass","minecraft:lime_stained_glass","minecraft:yellow_stained_glass"]}}}
 
+# Unstuck from blocks
+scoreboard players add Unstuck Timer 1
+execute if score Unstuck Timer matches 100 as @a[gamemode=!spectator] at @s run tp @s ~ ~0.1 ~
 
 # - - - Countdown to game start
 scoreboard players remove BuildTick Timer 1

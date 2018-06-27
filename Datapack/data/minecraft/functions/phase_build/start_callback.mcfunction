@@ -88,3 +88,6 @@ bossbar set build_time color green
 
 execute store result bossbar build_time max run scoreboard players get BuildSecond Timer
 execute store result bossbar build_time value run scoreboard players get BuildSecond Timer
+
+# Reset get-players-unstuck-from-blocks timer
+scoreboard players set Unstuck Timer 0
