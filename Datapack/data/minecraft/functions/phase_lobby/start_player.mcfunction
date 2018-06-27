@@ -1,5 +1,6 @@
 teleport @s -16.6 15 3.7 -110 0
 gamemode adventure @s
+scoreboard players set @s DeathTime 10
 
 function code/clear_player
 replaceitem entity @s weapon.offhand air
