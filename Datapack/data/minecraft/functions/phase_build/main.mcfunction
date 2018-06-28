@@ -23,7 +23,7 @@ execute if score BuildSecond Timer matches 10 if score BuildTick Timer matches 0
 # Warnings
 execute if score BuildSecond Timer matches 20 if score BuildTick Timer matches 0 as @a at @s run function phase_build/placement_warnings
 execute if score BuildSecond Timer matches 10 if score BuildTick Timer matches 0 run tellraw @a {"text":"10 seconds left, board your rafts!","color":"red"}
-execute if score BuildSecond Timer matches ..10 if score BuildTick Timer matches 0 as @a at @s run playsound block.note.pling master @s ~ ~ ~ 2 2
+execute if score BuildSecond Timer matches ..10 if score BuildTick Timer matches 0 as @a at @s run playsound block.note_block.pling master @s ~ ~ ~ 2 2
 
 # Start
 execute if score BuildSecond Timer matches 0 if score BuildTick Timer matches 0 run function phase_play/start

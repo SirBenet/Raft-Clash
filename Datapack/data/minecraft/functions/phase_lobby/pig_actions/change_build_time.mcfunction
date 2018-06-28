@@ -19,9 +19,9 @@ execute if block -5 17 7 glass_pane run data merge entity @e[type=area_effect_cl
 execute if block -5 17 7 ladder run data merge entity @e[type=area_effect_cloud,tag=HoverTextBuildTime,limit=1] {CustomName:"{\"color\":\"gold\",\"text\":\"Build Time: Long\"}"}
 
 # Sound & message
-execute if block -5 17 7 iron_bars run playsound minecraft:block.note.xylophone master @s ~ ~ ~ 2 1
-execute if block -5 17 7 glass_pane run playsound minecraft:block.note.xylophone master @s ~ ~ ~ 2 1.5
-execute if block -5 17 7 ladder run playsound minecraft:block.note.xylophone master @s ~ ~ ~ 2 2
+execute if block -5 17 7 iron_bars run playsound block.note_block.xylophone master @s ~ ~ ~ 2 1
+execute if block -5 17 7 glass_pane run playsound block.note_block.xylophone master @s ~ ~ ~ 2 1.5
+execute if block -5 17 7 ladder run playsound block.note_block.xylophone master @s ~ ~ ~ 2 2
 
 execute if block -5 17 7 iron_bars run title @a actionbar [{"selector":"@s"},{"text":" has changed build phase time to quick","color":"gray"}]
 execute if block -5 17 7 glass_pane run title @a actionbar [{"selector":"@s"},{"text":" has changed build phase time to normal","color":"gray"}]
