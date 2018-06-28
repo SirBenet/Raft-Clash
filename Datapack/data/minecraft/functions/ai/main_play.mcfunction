@@ -10,7 +10,7 @@ execute if score AIMove Timer matches 30 run scoreboard players set AIMove Timer
 
 # Every 10 ticks: Try to bump away from wall
 scoreboard players add AIBump Timer 1
-execute if score AIBump Timer matches 11 as @e[type=xp_orb,tag=RAFTController,tag=Raft1] at @s positioned ~ ~-43 ~ run function ai/bump
+execute if score AIBump Timer matches 11 as @e[type=experience_orb,tag=RAFTController,tag=Raft1] at @s positioned ~ ~-43 ~ run function ai/bump
 execute if score AIBump Timer matches 11 run scoreboard players set AIBump Timer 0
 
 # Every 3 ticks: Teleport to mob I'm meant to be tracking (based on mode)
@@ -21,7 +21,7 @@ execute if score AITeleport Timer matches 3 if entity @s[tag=AIModeAttack] run f
 execute if score AITeleport Timer matches 3 run scoreboard players set AITeleport Timer 0
 
 # Every tick: Carry out current ship action (accelerate, turn)
-execute if entity @s[tag=AIModeControl] as @e[type=xp_orb,tag=RAFTController,tag=Raft1] at @s run function ai/do_current_raft_action
+execute if entity @s[tag=AIModeControl] as @e[type=experience_orb,tag=RAFTController,tag=Raft1] at @s run function ai/do_current_raft_action
 
 # Melee combat
 execute if score AIAttackAnimation Global matches 1.. run scoreboard players remove AIAttackAnimation Global 1

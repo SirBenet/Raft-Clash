@@ -19,7 +19,7 @@ scoreboard players operation @s TempZ = ForwardZ WorkSpace
 
 # Get forward/left vector for AI RAFTController
 summon area_effect_cloud ~ ~ ~ {Tags:["VectorGetter"]}
-execute as @e[type=xp_orb,tag=RAFTController,tag=Raft1,limit=1] rotated as @s run tp @e[type=area_effect_cloud,tag=VectorGetter] 0.0 0.0 0.0 ~-90 0
+execute as @e[type=experience_orb,tag=RAFTController,tag=Raft1,limit=1] rotated as @s run tp @e[type=area_effect_cloud,tag=VectorGetter] 0.0 0.0 0.0 ~-90 0
 execute as @e[type=area_effect_cloud,tag=VectorGetter] at @s run function code/get_vectors
 kill @e[type=area_effect_cloud,tag=VectorGetter]
 
@@ -36,7 +36,7 @@ scoreboard players operation Leftness WorkSpace = LeftX WorkSpace
 scoreboard players operation Leftness WorkSpace += LeftZ WorkSpace
 
 # Set ship action
-scoreboard players set @e[type=xp_orb,tag=RAFTController,tag=Raft1] AIShipAction 0
+scoreboard players set @e[type=experience_orb,tag=RAFTController,tag=Raft1] AIShipAction 0
 execute if score Forwardness WorkSpace matches 10000000.. run scoreboard players set AIShipAction Global 1
 execute if score Forwardness WorkSpace matches ..-200000000 run scoreboard players set AIShipAction Global 2
 execute if score Leftness WorkSpace matches 1000000000.. run scoreboard players set AIShipAction Global 2

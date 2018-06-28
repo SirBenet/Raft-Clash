@@ -32,18 +32,18 @@ xp set @s 0
 particle end_rod ~ ~100 ~ 0.5 0.5 0.5 0 5 force @a[distance=0.1..]
 
 # If standing on moving raft, keep up with it
-execute if entity @s[tag=OnRaft1,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft1] run function phase_play/on_raft_movement
-execute if entity @s[tag=OnRaft2,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft2] run function phase_play/on_raft_movement
-execute if entity @s[tag=OnRaft3,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft3] run function phase_play/on_raft_movement
-execute if entity @s[tag=OnRaft4,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft4] run function phase_play/on_raft_movement
-execute if entity @s[tag=OnRaft5,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft5] run function phase_play/on_raft_movement
-execute if entity @s[tag=OnRaft6,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft6] run function phase_play/on_raft_movement
-execute if entity @s[tag=OnRaft7,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft7] run function phase_play/on_raft_movement
-execute if entity @s[tag=OnRaft8,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft8] run function phase_play/on_raft_movement
-execute if entity @s[tag=OnRaft9,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft9] run function phase_play/on_raft_movement
-execute if entity @s[tag=OnRaft10,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft10] run function phase_play/on_raft_movement
-execute if entity @s[tag=OnRaft11,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft11] run function phase_play/on_raft_movement
-execute if entity @s[tag=OnRaft12,nbt=!{RootVehicle:{}}] if entity @e[type=xp_orb,tag=!RAFTControllerStopped,tag=Raft12] run function phase_play/on_raft_movement
+execute if entity @s[tag=OnRaft1,nbt=!{RootVehicle:{}}] if entity @e[type=experience_orb,tag=!RAFTControllerStopped,tag=Raft1] run function phase_play/on_raft_movement
+execute if entity @s[tag=OnRaft2,nbt=!{RootVehicle:{}}] if entity @e[type=experience_orb,tag=!RAFTControllerStopped,tag=Raft2] run function phase_play/on_raft_movement
+execute if entity @s[tag=OnRaft3,nbt=!{RootVehicle:{}}] if entity @e[type=experience_orb,tag=!RAFTControllerStopped,tag=Raft3] run function phase_play/on_raft_movement
+execute if entity @s[tag=OnRaft4,nbt=!{RootVehicle:{}}] if entity @e[type=experience_orb,tag=!RAFTControllerStopped,tag=Raft4] run function phase_play/on_raft_movement
+execute if entity @s[tag=OnRaft5,nbt=!{RootVehicle:{}}] if entity @e[type=experience_orb,tag=!RAFTControllerStopped,tag=Raft5] run function phase_play/on_raft_movement
+execute if entity @s[tag=OnRaft6,nbt=!{RootVehicle:{}}] if entity @e[type=experience_orb,tag=!RAFTControllerStopped,tag=Raft6] run function phase_play/on_raft_movement
+execute if entity @s[tag=OnRaft7,nbt=!{RootVehicle:{}}] if entity @e[type=experience_orb,tag=!RAFTControllerStopped,tag=Raft7] run function phase_play/on_raft_movement
+execute if entity @s[tag=OnRaft8,nbt=!{RootVehicle:{}}] if entity @e[type=experience_orb,tag=!RAFTControllerStopped,tag=Raft8] run function phase_play/on_raft_movement
+execute if entity @s[tag=OnRaft9,nbt=!{RootVehicle:{}}] if entity @e[type=experience_orb,tag=!RAFTControllerStopped,tag=Raft9] run function phase_play/on_raft_movement
+execute if entity @s[tag=OnRaft10,nbt=!{RootVehicle:{}}] if entity @e[type=experience_orb,tag=!RAFTControllerStopped,tag=Raft10] run function phase_play/on_raft_movement
+execute if entity @s[tag=OnRaft11,nbt=!{RootVehicle:{}}] if entity @e[type=experience_orb,tag=!RAFTControllerStopped,tag=Raft11] run function phase_play/on_raft_movement
+execute if entity @s[tag=OnRaft12,nbt=!{RootVehicle:{}}] if entity @e[type=experience_orb,tag=!RAFTControllerStopped,tag=Raft12] run function phase_play/on_raft_movement
 
 # If falling, stop culling below me
 execute store result score FallDistance WorkSpace run data get entity @s FallDistance 100

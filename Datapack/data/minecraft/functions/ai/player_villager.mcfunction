@@ -3,9 +3,9 @@ execute store result score AIPlayerX WorkSpace run data get entity @p Pos[0] 102
 execute store result score AIPlayerY WorkSpace run data get entity @p Pos[1] 32768
 execute store result score AIPlayerZ WorkSpace run data get entity @p Pos[2] 1024
 
-execute store result score AICenterX WorkSpace run data get entity @e[type=xp_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest] Pos[0] 1024
-execute store result score AICenterY WorkSpace run data get entity @e[type=xp_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest] Pos[1] 32768
-execute store result score AICenterZ WorkSpace run data get entity @e[type=xp_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest] Pos[2] 1024
+execute store result score AICenterX WorkSpace run data get entity @e[type=experience_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest] Pos[0] 1024
+execute store result score AICenterY WorkSpace run data get entity @e[type=experience_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest] Pos[1] 32768
+execute store result score AICenterZ WorkSpace run data get entity @e[type=experience_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest] Pos[2] 1024
 scoreboard players remove AICenterY WorkSpace 1310720
 
 scoreboard players operation AIPlayerX WorkSpace -= AICenterX WorkSpace
@@ -14,7 +14,7 @@ scoreboard players operation AIPlayerZ WorkSpace -= AICenterZ WorkSpace
 
 # Get components local to way ship is facing
 summon area_effect_cloud ~ ~ ~ {Tags:["VectorGetter"]}
-execute as @e[type=xp_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest] rotated as @s run tp @e[type=area_effect_cloud,tag=VectorGetter,distance=..0.1] 0.0 0.0 0.0 ~ 0
+execute as @e[type=experience_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest] rotated as @s run tp @e[type=area_effect_cloud,tag=VectorGetter,distance=..0.1] 0.0 0.0 0.0 ~ 0
 execute as @e[type=area_effect_cloud,tag=VectorGetter] at @s run function code/get_vectors
 kill @e[type=area_effect_cloud,tag=VectorGetter]
 

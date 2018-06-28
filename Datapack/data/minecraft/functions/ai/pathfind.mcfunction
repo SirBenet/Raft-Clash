@@ -19,12 +19,12 @@ scoreboard players operation AIPathfinderYOld Global = AIPathfinderY WorkSpace
 scoreboard players operation AIPathfinderZOld Global = AIPathfinderZ WorkSpace
 
 # Teleport me to real raft center, then locally by above pos
-tp @s @e[type=xp_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest]
+tp @s @e[type=experience_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest]
 execute positioned as @s run tp @s ~ ~-41.24 ~
 # -0.5 from ship sinking down into water slightly, -0.74 for captain coldblood's offset into floor (same as in lobby)
 
 # The actual teleportation
-execute rotated as @e[type=xp_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest] run function ai/binary_teleport
+execute rotated as @e[type=experience_orb,tag=RAFTController,tag=Raft1,limit=1,sort=nearest] run function ai/binary_teleport
 
 # Rotate by Pathfinder's rotation if moving (else face nearest player for shooting bow)
 execute if score AIStandingStill Global matches 0 run execute store result score AIRotation WorkSpace run data get entity @s Rotation[0] 32768
