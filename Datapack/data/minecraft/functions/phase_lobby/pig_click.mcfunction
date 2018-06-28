@@ -40,7 +40,7 @@ execute if score PigAction WorkSpace matches 13 run function phase_lobby/pig_act
 execute if score PigAction WorkSpace matches 15 run function phase_lobby/pig_actions/change_build_time
 
 # Effects
-execute if score PigAction WorkSpace matches 0..5 run playsound entity.itemframe.rotate_item master @s ~ ~ ~ 2 0.5
+execute if score PigAction WorkSpace matches 0..5 run playsound entity.item_frame.rotate_item master @s ~ ~ ~ 2 0.5
 execute if score PigAction WorkSpace matches 6..7 run playsound item.armor.equip_elytra master @s ~ ~ ~ 2 0.8
 execute if score PigAction WorkSpace matches 8..13 run playsound entity.generic.drink master @s ~ ~ ~ 2 0.6
 execute if score PigAction WorkSpace matches 8..13 run effect give @s slowness 1 20 true
