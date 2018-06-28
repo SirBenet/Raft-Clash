@@ -15,5 +15,6 @@
    "entity.minecart.inside":{"replace":true,"sounds":["silent"]},
    "entity.minecart.riding":{"replace":true,"sounds":["silent"]},
    "entity.sheep.shear":{"replace":true,"sounds":["silent"]},
-   "entity.experience_orb.pickup":{"replace":true,"sounds":["silent"]}
+   "entity.experience_orb.pickup":{"replace":true,"sounds":["silent"]},
+   "item.armor.equip_generic":{"replace":true,"sounds":["silent"]}
 }
