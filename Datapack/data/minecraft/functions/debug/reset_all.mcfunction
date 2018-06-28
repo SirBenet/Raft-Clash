@@ -61,7 +61,7 @@ summon pig -8.50 14.2 -2.40 {Team:"NoCollide",DeathLootTable:"minecraft:empty",S
 summon pig -11 16.0 7 {Team:"NoCollide",DeathLootTable:"minecraft:empty",Saddle:1b,Silent:1b,ActiveEffects:[{Id:14,Duration:2147483647,ShowParticles:0b}],NoAI:1b,Invulnerable:1b,Tags:["ClickDetector","spectate"]}
 summon pig -13 16.0 7 {Team:"NoCollide",DeathLootTable:"minecraft:empty",Saddle:1b,Silent:1b,ActiveEffects:[{Id:14,Duration:2147483647,ShowParticles:0b}],NoAI:1b,Invulnerable:1b,Tags:["ClickDetector","ClickDetectorFFA","join"]}
 # Build phase time
-summon pig -5 16.8 7 {Team:"NoCollide",DeathLootTable:"minecraft:empty",Saddle:1b,Silent:1b,ActiveEffects:[{Id:14,Duration:2147483647,ShowParticles:0b}],NoAI:1b,Invulnerable:1b,Tags:["ClickDetector","build_time"]}
+summon pig -5 16.5 7 {Team:"NoCollide",DeathLootTable:"minecraft:empty",Saddle:1b,Silent:1b,ActiveEffects:[{Id:14,Duration:2147483647,ShowParticles:0b}],NoAI:1b,Invulnerable:1b,Tags:["ClickDetector","build_time"]}
 setblock -5 17 7 glass_pane
 
 # AI stuff
