@@ -21,6 +21,7 @@ clear @s gold_block
 clear @s acacia_fence_gate
 clear @s jungle_fence_gate
 clear @s birch_fence_gate
+clear @s dark_oak_pressure_plate
 
 clear @s iron_pickaxe
 clear @s shears

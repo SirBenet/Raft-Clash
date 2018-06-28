@@ -21,5 +21,6 @@ execute if block ~ ~ ~ gold_block run summon armor_stand ~ ~ ~ {Invulnerable:1b,
 execute if block ~ ~ ~ acacia_fence_gate run function raft/create/create_chest
 execute if block ~ ~ ~ jungle_fence_gate run function raft/create/create_cannon
 execute if block ~ ~ ~ birch_fence_gate run function raft/create/create_helm
+execute if block ~ ~ ~ dark_oak_pressure_plate run function raft/create/create_stool
 
 setblock ~ ~ ~ air
