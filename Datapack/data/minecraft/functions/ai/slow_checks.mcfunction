@@ -1,5 +1,5 @@
 # Load rest of raft
-setblock ~ 0 ~ structure_block[mode=load]{mode:"LOAD",name:"ship_loader",integrity:0.0f}
+setblock ~ 0 ~ structure_block[mode=load]{mode:"LOAD",name:"ship_loader",integrity:1.0f}
 setblock ~ 1 ~ redstone_block destroy
 fill ~ 0 ~ ~ 1 ~ bedrock
 

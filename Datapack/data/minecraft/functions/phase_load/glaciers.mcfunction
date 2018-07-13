@@ -68,5 +68,5 @@ execute if score LOAD Timer matches 169 run kill @e[type=area_effect_cloud,tag=G
 execute if score LOAD Timer matches 169 run summon area_effect_cloud ~ ~ ~ {Tags:["GAMESpreadChunkLoad"]}
 execute if score LOAD Timer matches 169 run spreadplayers 3315 -301 0 1 false @e[type=area_effect_cloud,tag=GAMESpreadChunkLoad]
 execute if score LOAD Timer matches 169 run setblock 3312 28 -304 air
-execute if score LOAD Timer matches 169 run setblock 3312 28 -304 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"arena_loader",integrity:0.0f} replace
+execute if score LOAD Timer matches 169 run setblock 3312 28 -304 structure_block[mode=load]{mode:"LOAD",ignoreEntities:1b,name:"arena_loader",integrity:1.0f} replace
 execute if score LOAD Timer matches 169 run setblock 3312 29 -304 redstone_block destroy

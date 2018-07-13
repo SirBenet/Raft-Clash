@@ -11,15 +11,15 @@ scoreboard objectives setdisplay sidebar
 #spreadplayers 1203 -301 0 1 false @e[type=area_effect_cloud,tag=GAMESpreadChunkLoad]
 #spreadplayers 3315 -301 0 1 false @e[type=area_effect_cloud,tag=GAMESpreadChunkLoad]
 #spreadplayers 147 -301 0 1 false @e[type=area_effect_cloud,tag=GAMESpreadChunkLoad]
-#setblock 3312 28 -304 structure_block mode=load replace {mode:"LOAD",name:"arena_loader",integrity:0.0f}
+#setblock 3312 28 -304 structure_block mode=load replace {mode:"LOAD",name:"arena_loader",integrity:1.0f}
 ##setblock 3312 28 -304 structure_block mode=load replace {mode:"LOAD",name:"glaciers",posZ:1,posY:0,posX:1,ignoreEntities:1b}
 #setblock 3312 29 -304 redstone_block default destroy
-#setblock 1200 28 -304 structure_block mode=load replace {mode:"LOAD",name:"arena_loader",integrity:0.0f}
+#setblock 1200 28 -304 structure_block mode=load replace {mode:"LOAD",name:"arena_loader",integrity:1.0f}
 ##setblock 1200 28 -304 structure_block mode=load replace {mode:"LOAD",name:"rocks",posZ:1,posY:0,posX:1,ignoreEntities:1b}
 #setblock 1200 29 -304 redstone_block default destroy
-#setblock 144 255 -304 structure_block mode=load replace {mode:"LOAD",name:"arena_loader",integrity:0.0f}
+#setblock 144 255 -304 structure_block mode=load replace {mode:"LOAD",name:"arena_loader",integrity:1.0f}
 #setblock 144 254 -304 redstone_block default destroy
-#setblock 2256 255 -304 structure_block mode=load replace {mode:"LOAD",name:"arena_loader",integrity:0.0f}
+#setblock 2256 255 -304 structure_block mode=load replace {mode:"LOAD",name:"arena_loader",integrity:1.0f}
 #setblock 2256 254 -304 redstone_block default destroy
 #function code/kill_rafts
 

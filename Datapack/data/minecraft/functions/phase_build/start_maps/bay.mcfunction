@@ -5,7 +5,7 @@ kill @e[type=area_effect_cloud,tag=GAMESpreadChunkLoad]
 summon area_effect_cloud ~ ~ ~ {Tags:["GAMESpreadChunkLoad"]}
 spreadplayers 147 -301 0 1 false @e[type=area_effect_cloud,tag=GAMESpreadChunkLoad]
 setblock 144 255 -304 air
-setblock 144 255 -304 structure_block[mode=load]{mode:"LOAD",name:"arena_loader",integrity:0.0f} replace
+setblock 144 255 -304 structure_block[mode=load]{mode:"LOAD",name:"arena_loader",integrity:1.0f} replace
 setblock 144 254 -304 redstone_block destroy
 
 function code/kill_rafts
