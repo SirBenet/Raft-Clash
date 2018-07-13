@@ -59,5 +59,6 @@ execute if score WinCheck Timer matches 40 run scoreboard players set WinCheck T
 scoreboard players add Cleanup Timer 1
 execute if score Cleanup Timer matches 200 run kill @e[type=experience_orb,tag=!RAFTController]
 execute if score Cleanup Timer matches 200 run kill @e[type=slime,tag=!AISlime]
+execute if score Cleanup Timer matches 200 as @e[type=experience_orb,tag=RAFTController] run data merge entity @s {Age:-32768s}
 execute if score Cleanup Timer matches 200 run kill @e[type=item,nbt={Item:{id:"minecraft:scute"}}]
 execute if score Cleanup Timer matches 200 run scoreboard players set Cleanup Timer 0
