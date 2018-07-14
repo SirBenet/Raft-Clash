@@ -1,5 +1,18 @@
+Design a raft to battle against each other in FFA and TEAM modes, or band together to defeat the fearsome pirate Captain Coldblood. Four arenas to play in, two of which are destructible. For 1 to 12 players. 
+
+If playing on multiplayer: 
+1. Make sure everyone gets the resource pack: http://rebrand.ly/RaftClash2RP 
+2. Change enable-command-block to true in server.properties, or the map will not work 
+3. Change allow-flight to true in server.properties, or people will get kicked when on a raft 
+
+
 - Updated functions to 1.13
 - Rafts now rotate and are controlled with WASD
-- Captain Coldblood has a melee attack mode, if you board their ship
+- Captain Coldblood has a melee attack mode if you board their ship
 - Added trident as rare item
 - Added Update Aquatic touches to the arenas
+- Quality-of-life improvements to: team selection, drowning/respawning, seating arrangements
+
+Trailer: https://www.youtube.com/watch?v=WhqdYdWmqRE
+Album: https://imgur.com/a/6hmsbAr
+Gif: https://i.imgur.com/ztfYC0z.gif
