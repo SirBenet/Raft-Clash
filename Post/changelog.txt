@@ -1,4 +1,6 @@
-Design a raft to battle against each other in FFA and TEAM modes, or band together to defeat the fearsome pirate Captain Coldblood. Four arenas to play in, two of which are destructible. For 1 to 12 players. 
+A vanilla combat minigame where you design and sail your own raft. Works for singleplayer and multiplayer.
+
+Design a raft to battle against each other in FFA and TEAM modes, or band together to defeat the fearsome pirate Captain Coldblood. Four arenas to play in. For 1 to 12 players. 
 
 If playing on multiplayer: 
 1. Make sure everyone gets the resource pack: http://rebrand.ly/RaftClash2RP 
